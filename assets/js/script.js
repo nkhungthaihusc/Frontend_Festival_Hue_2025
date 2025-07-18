@@ -27,6 +27,28 @@ function activateTab(index) {
     tabs[index].classList.add('active');
     const target = document.querySelector(tabs[index].dataset.tabTarget);
     target.classList.add('active');
+
+
+    
+    
+    //fix lỗi khi để auto chạy mà chuyển tab thì phần auto sẽ đứng
+    // const foodSwiper = target.querySelector('.food-swiper');
+    // const libSwiper = target.querySelector('.lib-swiper');
+    // if (foodSwiper && window.foodSwiper) {
+     
+    //     if (foodSwiper.autoplay) foodSwiper.autoplay.start();
+    // }
+    // if (libSwiper && window.libSwiper) {
+     
+    //     if (libSwiper.autoplay) libSwiper.autoplay.start();
+    // }
+
+    if (target.querySelector('.food-swiper') && window.foodSwiper) {
+        if (foodSwiper.autoplay) foodSwiper.autoplay.start();
+    }
+    if (target.querySelector('.lib-swiper') && window.libSwiper) {
+        if (libSwiper.autoplay) libSwiper.autoplay.start();
+    }
 }
 
 window.addEventListener('wheel', (e) => {

@@ -46,9 +46,9 @@ function activateTab(index) {
     if (target.querySelector('.food-swiper') && window.foodSwiper) {
         if (foodSwiper.autoplay) foodSwiper.autoplay.start();
     }
-    if (target.querySelector('.lib-swiper') && window.libSwiper) {
-        if (libSwiper.autoplay) libSwiper.autoplay.start();
-    }
+    // if (target.querySelector('.lib-swiper') && window.libSwiper) {
+    //     if (libSwiper.autoplay) libSwiper.autoplay.start();
+    // }
 }
 
 window.addEventListener('wheel', (e) => {

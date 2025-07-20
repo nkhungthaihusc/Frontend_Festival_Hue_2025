@@ -7,10 +7,20 @@
 $nav-hover-color: #2980b9;
 $font-size: 2rem;
 $nav-font-size: 1.2rem;
-
+// Color variables for dark theme
+$hue-bg: #1a1325; // Dark purple background
+$hue-surface: #23173a; // Slightly lighter for containers
+$hue-yellow: #dab67d; // Festival yellow
+$hue-red: #c0392b; // Festival red
+$hue-purple: #7c3aed; // Festival purple
+$hue-green: #2e7d32; // Festival green
+$hue-text: #f8f5f2; // Light text
+$hue-muted: #bbaea0; // Muted accent
 
 $font-path: "assets/fonts/";
 $my-font-name: "MyCustomFont";
+
+$hue-yellow: #dab67d;
 
 @font-face {
     font-family: #{$my-font-name};
@@ -33,6 +43,9 @@ body {
     position: relative;
     min-width: 1024px;
     overflow: hidden;
+    background: $hue-bg;
+    color: $hue-text;
+
 
     .my-container {
         height: 100vh;
@@ -47,9 +60,9 @@ body {
         aspect-ratio: 1/1;
 
         position: absolute;
-        top: .36rem;
+        top: 1.2rem;
         left: 1.36rem;
-        z-index: 36;
+        z-index: 100;
 
         img {
             width: 100%;
@@ -58,12 +71,29 @@ body {
     }
 
     .nav-bar {
+
+        // .nav-bar {
+        //     background: rgba($hue-surface, 0.98);
+
+        //     .nav-list .nav-item {
+        //         color: $hue-yellow;
+
+        //         &.active {
+        //             color: #fff;
+        //             border-bottom: 2px solid $hue-yellow;
+        //         }
+
+        //     }
+        // }
+
+        background: rgba($hue-surface, 0.98);
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         z-index: 99;
-        background-color: red;
+
+
 
         .nav {
             position: fixed;
@@ -79,16 +109,22 @@ body {
                 align-items: center;
                 width: 100%;
                 height: 100%;
+                padding-top: 1.2rem;
+                color: $hue-yellow;
 
-
-                & .nav-item {
+                .nav-item {
                     margin: .52rem 1.8rem 0;
                     position: relative;
                     cursor: pointer;
-                    height: .18rem;
+
                     font-size: $nav-font-size;
                     text-transform: uppercase;
-                    font-weight: 500;
+                    font-weight: 600;
+
+                    &.active {
+                        color: #fff;
+                        border-bottom: 2px solid $hue-yellow;
+                    }
                 }
             }
         }
@@ -164,7 +200,7 @@ body {
     .food {
         &-container {
             width: 90vw;
-            height: 75vh;
+            height: 80vh;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -196,9 +232,8 @@ body {
                 left: 0;
                 width: 100%;
                 height: 0.1rem;
-                background-color: #000;
+                background-color: $hue-yellow;
                 transform: scaleX(0.9);
-
             }
 
             img {
@@ -213,10 +248,19 @@ body {
 
         &-content {
             height: 40%;
-            display: flex;
-            flex-direction: column;
-            padding: 0 1rem;
+            padding: 1.4rem 1.2rem 0;
+            position: relative;
 
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 0.1rem;
+                background-color: $hue-yellow;
+                transform: scaleX(0.9);
+            }
         }
 
         &-title {
@@ -233,7 +277,7 @@ body {
 
         &-description {
             font-size: 0.9rem;
-            color: #333;
+            color: #fff;
             line-height: 1.5;
         }
 
@@ -254,6 +298,7 @@ body {
 
         &-content {
             display: none;
+            color: $hue-yellow;
 
             &.active {
                 display: inline-block;
@@ -271,7 +316,8 @@ body {
 }
 
 .swiper-slide {
-    border: 1px solid #c1b9a9;
+    border: 2px solid $hue-yellow;
+
     background: #444;
     color: #fff;
     display: flex;
@@ -358,7 +404,7 @@ body {
         }
 
         &-title {
-            
+
             width: 100%;
             height: 100%;
             padding-left: 2rem;
@@ -366,6 +412,7 @@ body {
             align-items: end;
             font-size: 1.4rem;
             font-weight: 700;
+            color: $hue-yellow;
 
 
 
@@ -399,13 +446,13 @@ body {
                 border: none;
                 position: relative;
 
-                .lib-more{
+                .lib-more {
                     display: flex;
                     justify-content: space-between;
                     align-items: end;
                     cursor: pointer;
                     z-index: 10;
-                
+
                     width: 9rem;
                     height: 2.8rem;
                     position: absolute;
@@ -415,9 +462,10 @@ body {
                     padding: 0.2rem 0.5rem;
                     border: 1px solid #bbb4a3;
                     border-radius: 0 1rem 0 0;
-                     background: rgba(34, 34, 34, 0.75); 
-                     border: 1px solid #fff;
-                    &-icon{
+                    background: rgba(34, 34, 34, 0.75);
+                    border: 1px solid #fff;
+
+                    &-icon {
                         font-size: 0.8rem;
                     }
                 }
@@ -427,7 +475,7 @@ body {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
-                    
+
                 }
             }
 
@@ -440,6 +488,8 @@ body {
                 }
 
             }
+
+            
 
 
 
@@ -500,16 +550,25 @@ body {
                 color: #bbb4a3;
             }
         }
-        .lib-name-cn{
+
+        .lib-name-cn {
             display: none;
-            font-size: 2rem;
-           
-            font-weight: 500;
+            font-size: 2.8rem;
+            color: $hue-yellow;
+            font-weight: bolder;
         }
 
         .lib-name-cn.active {
-           display: inline-block;
+            display: inline-block;
         }
 
     }
 }
+
+
+
+
+
+
+
+

@@ -59,10 +59,10 @@
    spaceBetween: 5,
    loop: true,
    loopedSlides: 1,
-   autoplay: {
-     delay: 5000, // tự động chuyển sau 1j
-     disableOnInteraction: false, // false: sẽ tiếp tục chạy kể cả khi người dùng chạm ->true: ngược lại
-   },
+  //  autoplay: {
+  //    delay: 5000, // tự động chuyển sau 1j
+  //    disableOnInteraction: false, // false: sẽ tiếp tục chạy kể cả khi người dùng chạm ->true: ngược lại
+  //  },
  });
  const foodContents = document.querySelectorAll(".food-content");
 

@@ -20,6 +20,8 @@ body {
   position: relative;
   min-width: 1024px;
   overflow: hidden;
+  background: #1a1325;
+  color: #f8f5f2;
 }
 .wrapper .my-container {
   height: 100vh;
@@ -30,21 +32,21 @@ body {
   width: 4rem;
   aspect-ratio: 1/1;
   position: absolute;
-  top: 0.36rem;
+  top: 1.2rem;
   left: 1.36rem;
-  z-index: 36;
+  z-index: 100;
 }
 .wrapper .logo img {
   width: 100%;
   height: 100%;
 }
 .wrapper .nav-bar {
+  background: rgba(35, 23, 58, 0.98);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 99;
-  background-color: red;
 }
 .wrapper .nav-bar .nav {
   position: fixed;
@@ -60,15 +62,20 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
+  padding-top: 1.2rem;
+  color: #dab67d;
 }
 .wrapper .nav-bar .nav .nav-list .nav-item {
   margin: 0.52rem 1.8rem 0;
   position: relative;
   cursor: pointer;
-  height: 0.18rem;
   font-size: 1.2rem;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
+}
+.wrapper .nav-bar .nav .nav-list .nav-item.active {
+  color: #fff;
+  border-bottom: 2px solid #dab67d;
 }
 .wrapper .user-container {
   position: absolute;
@@ -125,7 +132,7 @@ body {
 }
 #food .food-container {
   width: 90vw;
-  height: 75vh;
+  height: 80vh;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -154,7 +161,7 @@ body {
   left: 0;
   width: 100%;
   height: 0.1rem;
-  background-color: #000;
+  background-color: #dab67d;
   transform: scaleX(0.9);
 }
 #food .food-icon img {
@@ -164,9 +171,18 @@ body {
 }
 #food .food-content {
   height: 40%;
-  display: flex;
-  flex-direction: column;
-  padding: 0 1rem;
+  padding: 1.4rem 1.2rem 0;
+  position: relative;
+}
+#food .food-content::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  background-color: #dab67d;
+  transform: scaleX(0.9);
 }
 #food .food-title {
   font-size: 1.5rem;
@@ -177,7 +193,7 @@ body {
 }
 #food .food-description {
   font-size: 0.9rem;
-  color: #333;
+  color: #fff;
   line-height: 1.5;
 }
 #food .food-msg {
@@ -190,6 +206,7 @@ body {
 }
 #food .food-content {
   display: none;
+  color: #dab67d;
 }
 #food .food-content.active {
   display: inline-block;
@@ -201,7 +218,7 @@ body {
 }
 
 .swiper-slide {
-  border: 1px solid #c1b9a9;
+  border: 2px solid #dab67d;
   background: #444;
   color: #fff;
   display: flex;
@@ -284,6 +301,7 @@ body {
   align-items: end;
   font-size: 1.4rem;
   font-weight: 700;
+  color: #dab67d;
 }
 #lib .lib-swiper-container {
   width: 100%;
@@ -389,8 +407,9 @@ body {
 }
 #lib .lib .lib-name-cn {
   display: none;
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 2.8rem;
+  color: #dab67d;
+  font-weight: bolder;
 }
 #lib .lib .lib-name-cn.active {
   display: inline-block;

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playpen+Sans+Deva:wght@100..800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +12,7 @@
   font-style: normal;
 }
 body {
-  font-family: "MyCustomFont", sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 
 .wrapper {
@@ -71,7 +72,7 @@ body {
   cursor: pointer;
   font-size: 1.2rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: bold;
 }
 .wrapper .nav-bar .nav .nav-list .nav-item.active {
   color: #fff;
@@ -414,6 +415,7 @@ body {
   font-size: 2.8rem;
   color: #dab67d;
   font-weight: bolder;
+  font-family: "MyCustomFont";
 }
 #lib .lib .lib-name-cn.active {
   display: inline-block;

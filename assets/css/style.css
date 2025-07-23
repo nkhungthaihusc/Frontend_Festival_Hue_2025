@@ -452,29 +452,21 @@ h1 {
       background-size: cover;
       background-position: center;
       opacity: 0;
-      animation: fade 25s infinite ease-in-out;
+      animation: fade 15s infinite ease-in-out;
     }
     .slideshow div:nth-child(1) {
-      background-image: url("/Frontend_Festival_Hue_2025/assets/images/homepage1.png");
+      background-image: url("/Frontend_Festival_Hue_2025/assets/images/homepage.png");
       animation-delay: 0s;
     }
 
     .slideshow div:nth-child(2) {
-      background-image: url("/Frontend_Festival_Hue_2025/assets/images/homepage.png");
+      background-image: url("/Frontend_Festival_Hue_2025/assets/images/homepage1.png");
       animation-delay: 5s;
     }
 
     .slideshow div:nth-child(3) {
       background-image: url("/Frontend_Festival_Hue_2025/assets/images/homepage2.png");
       animation-delay: 10s;
-    }
-    .slideshow div:nth-child(4) {
-      background-image: url("/Frontend_Festival_Hue_2025/assets/images/countdown.png");
-      animation-delay: 15s;
-    }
-    .slideshow div:nth-child(5) {
-      background-image: url("/Frontend_Festival_Hue_2025/assets/images/doanhthu.png");
-      animation-delay: 20s;
     }
 
     @keyframes fade {

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playpen+Sans+Deva:wght@100..800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@
 
 @font-face {
   font-family: MyCustomFont;
-  src: url("assets/fonts/LaguSanBold.otf") format("opentype");
+  src: url("../fonts/LaguSansBold.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +17,6 @@ body {
     font-family: "MyCustomFont", sans-serif;
     height: 100vh;
     overflow: hidden;
-
 }
 
 .wrapper {
@@ -36,21 +36,21 @@ body {
   width: 4rem;
   aspect-ratio: 1/1;
   position: absolute;
-  top: 0.36rem;
+  top: 1.2rem;
   left: 1.36rem;
-  z-index: 36;
+  z-index: 100;
 }
 .wrapper .logo img {
   width: 100%;
   height: 100%;
 }
 .wrapper .nav-bar {
+  background: rgba(35, 23, 58, 0.98);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 99;
-  background-color: red;
 }
 .wrapper .nav-bar .nav {
   position: fixed;
@@ -66,12 +66,13 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
+  padding-top: 1.2rem;
+  color: #dab67d;
 }
 .wrapper .nav-bar .nav .nav-list .nav-item {
   margin: 0.52rem 1.8rem 0;
   position: relative;
   cursor: pointer;
-  height: 0.18rem;
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -135,7 +136,7 @@ body {
 }
 #food .food-container {
   width: 90vw;
-  height: 75vh;
+  height: 80vh;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -164,7 +165,7 @@ body {
   left: 0;
   width: 100%;
   height: 0.1rem;
-  background-color: #000;
+  background-color: #dab67d;
   transform: scaleX(0.9);
 }
 #food .food-icon img {
@@ -174,9 +175,18 @@ body {
 }
 #food .food-content {
   height: 40%;
-  display: flex;
-  flex-direction: column;
-  padding: 0 1rem;
+  padding: 1.4rem 1.2rem 0;
+  position: relative;
+}
+#food .food-content::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  background-color: #dab67d;
+  transform: scaleX(0.9);
 }
 #food .food-title {
   font-size: 1.5rem;
@@ -187,7 +197,7 @@ body {
 }
 #food .food-description {
   font-size: 0.9rem;
-  color: #333;
+  color: #fff;
   line-height: 1.5;
 }
 #food .food-msg {
@@ -200,6 +210,7 @@ body {
 }
 #food .food-content {
   display: none;
+  color: #dab67d;
 }
 #food .food-content.active {
   display: inline-block;
@@ -210,8 +221,12 @@ body {
   height: 100%;
 }
 
+.food-swiper {
+  border-left: 1px solid #dab67d;
+}
+
 .swiper-slide {
-  border: 1px solid #c1b9a9;
+  border: 2px solid #dab67d;
   background: #444;
   color: #fff;
   display: flex;
@@ -226,7 +241,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
 }
 .swiper-slide::after {
   content: "";
@@ -295,6 +309,7 @@ body {
   align-items: end;
   font-size: 1.4rem;
   font-weight: 700;
+  color: #dab67d;
 }
 #lib .lib-swiper-container {
   width: 100%;
@@ -400,9 +415,10 @@ body {
 }
 #lib .lib .lib-name-cn {
   display: none;
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 500;
+  font-size: 2.8rem;
+  color: #dab67d;
+  font-weight: bolder;
+  font-family: "MyCustomFont";
 }
 #lib .lib .lib-name-cn.active {
   display: inline-block;

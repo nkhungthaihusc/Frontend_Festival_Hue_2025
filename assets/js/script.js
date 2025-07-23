@@ -17,19 +17,12 @@ tabs.forEach(tab => {
 
 
 
-let currentTab = 0;
-const tabCount = tabs.length;
-let isScrolling = false; 
-
 function activateTab(index) {
     tabContents.forEach(tc => tc.classList.remove('active'));
     tabs.forEach(t => t.classList.remove('active'));
     tabs[index].classList.add('active');
     const target = document.querySelector(tabs[index].dataset.tabTarget);
     target.classList.add('active');
-
-
-    
     
     //fix lỗi khi để auto chạy mà chuyển tab thì phần auto sẽ đứng
     // const foodSwiper = target.querySelector('.food-swiper');
@@ -51,12 +44,16 @@ function activateTab(index) {
     // }
 }
 
+let currentTab = 0;
+const tabCount = tabs.length;
+let isScrolling = false; 
+
 window.addEventListener('wheel', (e) => {
     if (isScrolling) return;
-    if (e.deltaY > 0) {
-        currentTab = (currentTab + 1) % tabCount;
-    } else if (e.deltaY < 0) {
-        currentTab = (currentTab - 1 + tabCount) % tabCount;
+    if (e.deltaY > 0 && currentTab < tabCount - 1) {
+        currentTab++;
+    } else if (e.deltaY < 0 && currentTab > 0) {
+        currentTab--;
     } else {
         return;
     }

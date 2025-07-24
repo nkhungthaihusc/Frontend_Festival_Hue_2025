@@ -88,28 +88,30 @@ body {
     color: #fff;
     border-bottom: 1px solid #dab67d;
 }
+
 .nav-item {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #dab67d;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 0.3s ease;
-  }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #dab67d;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.3s ease;
+    }
 
-  &.active::after,
-  &:hover::after {
-    transform: scaleX(1);
-  }
+    &.active::after,
+    &:hover::after {
+        transform: scaleX(1);
+    }
 }
+
 .wrapper .user-container {
     position: absolute;
     right: 2rem;
@@ -532,10 +534,12 @@ body {
     background-image: url("/Frontend_Festival_Hue_2025/assets/images/page1-3.jpg");
     animation-delay: 10s;
 }
+
 .slideshow div:nth-child(4) {
     background-image: url("/Frontend_Festival_Hue_2025/assets/images/page1-4.jpg");
     animation-delay: 15s;
 }
+
 .slideshow div:nth-child(4) {
     background-image: url("/Frontend_Festival_Hue_2025/assets/images/page1-5.jpg");
     animation-delay: 20s;
@@ -562,32 +566,36 @@ body {
         opacity: 0;
     }
 }
-#language{
+
+#language {
     border-radius: 10px;
     padding: 0.3rem 0.5rem;
     border: 1px solid #ccc;
     background-color: white;
 }
+
 /*culture*/
-.festival-wrapper{
+.festival-wrapper {
     display: flex;
     align-items: flex-start;
     gap: 20px;
     padding: 20px;
     color: white;
 }
-.festival-list,.festival-mid,.festival-img{
+
+.festival-list,
+.festival-mid,
+.festival-img {
     padding: 20px;
 }
-.festival-img{
 
-}
-.festival-list{
+.festival-list {
     width: 20%;
     border-right: 2px solid white;
     flex: 1;
 }
-.festival-list li{
+
+.festival-list li {
     color: #dab67d;
     list-style: none;
     padding-bottom: 0.5rem;
@@ -595,83 +603,76 @@ body {
     text-align: center;
     cursor: pointer;
 }
-.festival-list li {
-  position: relative;
 
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #dab67d;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 0.3s ease;
-  }
-
-  &.active::after,
-  &:hover::after {
-    transform: scaleX(1);
-  }
-  &:hover{
+.festival-list li:hover {
     color: #fff;
-  }
 }
-h3{
+.festival-item-selected {
+    color: #fff!important;
+    font-weight: bold;
+}
+h3 {
     padding-bottom: 20px;
 
 }
-#festival-info li{
+
+#festival-info li {
     padding-bottom: 20px;
     cursor: pointer;
 }
+
 #festival-detail {
-  margin-top: 50px;
-  padding: 20px;
-  color: white;
+    margin-top: 50px;
+    padding: 20px;
+    color: white;
 }
+
 .festival-info li.active {
-  font-weight: bold;
-  color: #dab67d;
+    font-weight: bold;
+    color: #dab67d;
 }
-.festival-mid{
-}
+
 .festival-img {
-  width: 100%;
-  max-width: 800px; /* hoặc auto nếu ảnh responsive */
-  margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    /* hoặc auto nếu ảnh responsive */
+    margin: 0 auto;
 }
 
 .festival-img img {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    height: auto;
+    display: block;
 }
-.title{
+
+.title {
     font-size: 30;
     font-weight: bold;
     padding-top: 50px;
 }
+
 .festival-detail {
-  max-width: 100%;
-  word-wrap: break-word;
-  text-align: justify;
-  margin-top: 10px;
+    max-width: 100%;
+    word-wrap: break-word;
+    text-align: justify;
+    margin-top: 10px;
 }
+
 .festival-img {
     height: calc(100vh - 140px) !important;
     overflow-y: scroll !important;
     overflow-x: hidden !important;
     max-height: calc(100vh - 140px) !important;
 }
-.festival-img::-webkit-scrollbar{
+
+.festival-img::-webkit-scrollbar {
     display: none;
 }
-.festival-img img{
+
+.festival-img img {
     padding-top: 30px;
 }
+
 #cul {
     height: calc(100vh - 60px) !important;
     overflow: hidden !important;
@@ -681,4 +682,5 @@ h3{
     height: 100% !important;
     overflow: hidden !important;
 }
+
 /*# sourceMappingURL=style.css.map */

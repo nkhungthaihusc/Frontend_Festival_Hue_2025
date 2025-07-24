@@ -63,17 +63,48 @@ const festivalData = {
 function showFestival(key) {
     const data = festivalData[key];
     if (!data) return;
+    const festivalListItems = document.querySelectorAll(".festival-item");
+    festivalListItems.forEach(item => {
+        item.classList.remove("festival-item-selected");
+    });
 
-    // Đổi tiêu đề và danh sách
+    const itemSelected = document.querySelector(`[${key}]`);
+    itemSelected.classList.add("festival-item-selected");
+
+
     document.getElementById("festival-title").textContent = data.title;
 
     const infoList = document.getElementById("festival-info");
     infoList.innerHTML = "";
-    data.info.forEach(item => {
+
+
+    const sectionIds = ["intro", "time", "history", "main", "mean"];
+
+
+    data.info.forEach((item, idx) => {
         const li = document.createElement("li");
         li.textContent = item;
+        li.addEventListener("click", function () {
+            const festivalImg = document.querySelector(".festival-img");
+            const target = document.getElementById(sectionIds[idx]);
+            if (target && festivalImg) {
+                festivalImg.scrollTo({
+                    top: target.offsetTop - festivalImg.offsetTop,
+                    behavior: "smooth"
+                });
+            }
+        });
         infoList.appendChild(li);
     });
+
+
+
+
+
+
+
+
+
     //Đổi title
     document.getElementById("intro").textContent = data.info[0];
     document.getElementById("festival-detail-intro").textContent = data.intro;
@@ -96,9 +127,20 @@ function showFestival(key) {
     document.getElementById("festival-main-img5").src = data.image[4];
     // Cuộn đến phần chi tiết
     //
-    document.querySelector(".festival-img")?.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-    });
+    // document.querySelector(".festival-img")?.scrollIntoView({
+    //     behavior: "smooth",
+    //     block: "start"
+    // });
     //   detail1.scrollIntoView({ behavior: "smooth" });
 }
+
+
+// Click event when user clicks on item the content will scroll to top
+const buttonListItem = document.querySelectorAll(".festival-item");
+console.log(buttonListItem);
+buttonListItem.forEach(item => {
+    item.addEventListener("click", function () {
+        const box = document.querySelector(".festival-img");
+        box.scrollTop = 0; // Reset scroll position to top
+    });
+});

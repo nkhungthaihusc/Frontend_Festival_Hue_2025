@@ -46,35 +46,53 @@ function activateTab(index) {
     // }
 }
 
-// let currentTab = 0;
-// const tabCount = tabs.length;
-// let isScrolling = false;
 
-// let scrollDelta = 0;
-// const scrollCount = 3000; // Giá trị để kích hoạt chuyện tabs, hiện tại 200px
+document.querySelectorAll('.festival-img').forEach(img => {
+    img.addEventListener('wheel', function(e) {
+        e.stopPropagation();
+    });
+});
 
-// window.addEventListener('wheel', (e) => {
-//     if (isScrolling) return;
-//     scrollDelta += e.deltaY;
 
-//     if (scrollDelta > scrollCount && currentTab < tabCount - 1) {
-//         currentTab++;
-//         activateTab(currentTab);
-//         isScrolling = true;
-//         scrollDelta = 0;
-//         setTimeout(() => {
-//             isScrolling = false;
-//         }, 600);
-//     } else if (scrollDelta < -scrollCount && currentTab > 0) {
-//         currentTab--;
-//         activateTab(currentTab);
-//         isScrolling = true;
-//         scrollDelta = 0;
-//         setTimeout(() => {
-//             isScrolling = false;
-//         }, 600);
-//     }
-// });
+let currentTab = 0;
+const tabCount = tabs.length;
+let isScrolling = false;
+
+let scrollDelta = 0;
+const scrollCount = 500;
+
+
+let scrollTimeout;
+
+
+window.addEventListener('wheel', (e) => {
+    if (isScrolling) return;
+    scrollDelta += e.deltaY;
+
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+        scrollDelta = 0;
+    }, 100);
+
+
+    if (scrollDelta > scrollCount && currentTab < tabCount - 1) {
+        currentTab++;
+        activateTab(currentTab);
+        isScrolling = true;
+        scrollDelta = 0;
+        setTimeout(() => {
+            isScrolling = false;
+        }, 600);
+    } else if (scrollDelta < -scrollCount && currentTab > 0) {
+        currentTab--;
+        activateTab(currentTab);
+        isScrolling = true;
+        scrollDelta = 0;
+        setTimeout(() => {
+            isScrolling = false;
+        }, 600);
+    }
+});
 tabs.forEach((tab, idx) => {
     tab.addEventListener('click', () => {
         currentTab = idx;

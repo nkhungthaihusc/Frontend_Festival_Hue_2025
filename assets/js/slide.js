@@ -59,10 +59,16 @@
    spaceBetween: 5,
    loop: true,
    loopedSlides: 1,
+   speed: 380,
   //  autoplay: {
   //    delay: 5000, // tự động chuyển sau 1j
   //    disableOnInteraction: false, // false: sẽ tiếp tục chạy kể cả khi người dùng chạm ->true: ngược lại
   //  },
+    navigation: {
+      nextEl: ".food-next",
+      prevEl: ".food-prev",
+    },
+    
  });
  const foodContents = document.querySelectorAll(".food-content");
 
@@ -167,3 +173,198 @@
      }
    });
  });
+
+
+
+
+ //vil swiper
+const craftVillages = [
+  {
+    title: "Làng nón lá Phú Cam",
+    description: "Nổi tiếng với những chiếc nón bài thơ mang vẻ đẹp dịu dàng và lãng mạn của xứ Huế. Mỗi chiếc nón được chằm tỉ mỉ và có thể ẩn hiện hình ảnh hoặc bài thơ dưới ánh nắng.",
+    image: [
+      "https://i2.ex-cdn.com/crystalbay.com/files/content/2024/08/29/lang-non-phu-cam-5-1040.jpg",
+      "https://vietnamtourism.vn/imguploads/tourist/58Langnonphucam01.jpg",
+      "https://i2.ex-cdn.com/crystalbay.com/files/content/2024/08/29/lang-non-phu-cam-4-1032.jpg",
+    ]
+  },
+  
+  {
+    title: "Làng gốm Phước Tích",
+    description: "Nổi tiếng với gốm không men, nung bằng rơm tạo màu sắc nâu đỏ đặc trưng. Đồ gốm bền chắc, mang vẻ đẹp mộc mạc và thanh lịch.",
+    image: [
+      "https://imagevietnam.vnanet.vn//MediaUpload/Org/2023/10/24/5224-12-45-34.jpg",
+      "https://images.baodantoc.vn/uploads/2023/Th%C3%A1ng%205/Ng%C3%A0y_31/Anh/Gom%20co/14.jpg",
+      "https://imagevietnam.vnanet.vn//MediaUpload/Org/2023/10/24/1424-12-37-10.jpg",
+    ]
+  },
+  {
+    title: "Làng tranh dân gian Sình",
+    description: "Làng nghề tranh dân gian phục vụ nghi lễ tín ngưỡng. Tranh được in từ bản gỗ và tô màu thủ công bằng nguyên liệu tự nhiên, mang đậm nét văn hóa dân gian Huế.",
+    image: [
+      "https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2023/2/26/1151746/ANH-1.jpg",
+      "https://i.ex-cdn.com/vntravellive.com/files/hangh.vntravel/2023/01/17/5322-lang-tranh-sinh-phong-cach-hoi-hoa-khac-biet-cua-xu-hue-105235.jpg",
+      "https://orientalrain.com/wp-content/uploads/2023/12/tranh-lang-sinh-top-view-1400x677.jpg"
+
+    ]
+  }
+];
+
+
+
+
+
+
+const vilSwiperWrapper = document.querySelector('.vil-swiper .swiper-wrapper');
+if (vilSwiperWrapper) {
+  vilSwiperWrapper.innerHTML = craftVillages[0].image.map(img => `
+    <div class="swiper-slide">
+      <img src="${img}" alt="${craftVillages[0].title}" />
+    </div>
+  `).join('');
+}
+
+var vilSwiper = new Swiper(".vil-swiper", {
+   slidesPerView: 'auto',
+   spaceBetween: 15,
+   loopedSlides: 1,
+   speed: 380,
+   loop: true,
+   effect: 'coverflow',
+   coverflowEffect: {
+     rotate: 0,
+     stretch: 0,
+     depth: 100,
+     modifier: 1,
+     slideShadows: true,
+   },
+   autoplay: {
+     delay: 4000,
+     disableOnInteraction: false,
+   },
+});
+
+// Enhanced update function with smooth transitions
+function updateVillageContent(villageIndex) {
+  const village = craftVillages[villageIndex];
+  
+  // Add fade-out effect before updating content
+  const detailElement = document.querySelector('.vil-detail');
+  if (detailElement) {
+    detailElement.style.opacity = '0.7';
+    detailElement.style.transform = 'translateY(10px)';
+  }
+  
+  setTimeout(() => {
+    // Update title with typewriter effect
+    const titleElement = document.querySelector('.vil-title h3');
+    if (titleElement) {
+      titleElement.style.opacity = '0';
+      setTimeout(() => {
+        titleElement.textContent = village.title;
+        titleElement.style.opacity = '1';
+        titleElement.style.transform = 'translateY(0)';
+      }, 200);
+    }
+    
+    // Update description with fade effect
+    const descriptionElement = document.querySelector('.vil-des');
+    if (descriptionElement) {
+      descriptionElement.style.opacity = '0';
+      setTimeout(() => {
+        descriptionElement.textContent = village.description;
+        descriptionElement.style.opacity = '1';
+      }, 300);
+    }
+
+    // Update swiper images with smooth transition
+    if (vilSwiperWrapper && vilSwiper) {
+      vilSwiperWrapper.innerHTML = village.image.map((img, index) => `
+        <div class="swiper-slide" style="opacity: 0; transform: scale(0.9);">
+          <img src="${img}" alt="${village.title}" onload="this.parentElement.style.opacity='1'; this.parentElement.style.transform='scale(1)';" />
+        </div>
+      `).join('');
+      
+      vilSwiper.update();
+      vilSwiper.slideTo(0, 500);
+    }
+    
+    // Restore detail element
+    if (detailElement) {
+      detailElement.style.opacity = '1';
+      detailElement.style.transform = 'translateY(0)';
+    }
+  }, 150);
+}
+
+// Enhanced interaction with visual feedback
+document.addEventListener('DOMContentLoaded', function() {
+  const siderItems = document.querySelectorAll('.vil-sider-item');
+  
+  siderItems.forEach((item, index) => {
+    // Add hover sound effect (visual feedback)
+    item.addEventListener('mouseenter', function() {
+      this.style.transform = 'scale(1.1)';
+    });
+    
+    item.addEventListener('mouseleave', function() {
+      if (!this.classList.contains('active')) {
+        this.style.transform = 'scale(1)';
+      }
+    });
+    
+    item.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Prevent multiple rapid clicks
+      if (this.dataset.updating === 'true') return;
+      this.dataset.updating = 'true';
+      
+      // Remove active class from all items with animation
+      siderItems.forEach(siderItem => {
+        siderItem.classList.remove('active');
+        if (siderItem !== this) {
+          siderItem.style.transform = 'scale(1)';
+        }
+      });
+      
+      // Add active class to clicked item
+      this.classList.add('active');
+      this.style.transform = 'scale(1.05)';
+      
+      // Update content
+      updateVillageContent(index);
+      
+      // Reset updating flag
+      setTimeout(() => {
+        this.dataset.updating = 'false';
+      }, 600);
+    });
+  });
+  
+  // Initialize first item as active
+  if (siderItems.length > 0) {
+    siderItems[0].classList.add('active');
+    siderItems[0].style.transform = 'scale(1.05)';
+    updateVillageContent(0);
+  }
+  
+  // Add keyboard navigation
+  document.addEventListener('keydown', function(e) {
+    const activeItem = document.querySelector('.vil-sider-item.active');
+    if (!activeItem) return;
+    
+    const items = Array.from(siderItems);
+    const currentIndex = items.indexOf(activeItem);
+    
+    if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+      e.preventDefault();
+      const prevIndex = currentIndex > 0 ? currentIndex - 1 : items.length - 1;
+      items[prevIndex].click();
+    } else if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+      e.preventDefault();
+      const nextIndex = currentIndex < items.length - 1 ? currentIndex + 1 : 0;
+      items[nextIndex].click();
+    }
+  });
+});

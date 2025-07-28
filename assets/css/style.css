@@ -398,7 +398,7 @@ body {
     flex-direction: column;
     position: relative;
     backdrop-filter: blur(10px);
-    
+
     padding: 1.5rem;
 }
 
@@ -449,9 +449,9 @@ body {
     width: 100%;
     height: 68%;
     position: relative;
-   
+
     overflow: hidden;
- 
+
 }
 
 
@@ -472,10 +472,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     overflow: hidden;
     width: 75% !important;
-  
+
     border-radius: 15px;
     position: relative;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -775,6 +775,7 @@ body {
 .festival-wrapper {
     display: flex;
     align-items: flex-start;
+    justify-content: space-around;
     gap: 20px;
     padding: 20px;
     color: white;
@@ -787,7 +788,6 @@ body {
 }
 
 .festival-list {
-    width: 20%;
     border-right: 2px solid white;
     flex: 1;
 }
@@ -832,8 +832,7 @@ h3 {
 }
 
 .festival-img {
-    width: 100%;
-    max-width: 800px;
+    width: 60%;
     /* hoặc auto nếu ảnh responsive */
     margin: 0 auto;
 }
@@ -875,13 +874,16 @@ h3 {
 #cul {
     height: calc(100vh - 60px) !important;
     overflow: hidden !important;
+    width: 100%;
 }
 
 .festival-wrapper {
     height: 100% !important;
     overflow: hidden !important;
 }
-
+.festival-mid{
+    width: 15%;
+}
 /* Village Section - Enhanced Design */
 #vil {
     width: 100%;
@@ -1107,7 +1109,7 @@ h3 {
     height: 100%;
     position: relative;
     overflow: hidden;
-   
+
 }
 
 .vil-list-img::before {
@@ -1178,4 +1180,3 @@ h3 {
 .vil-swiper .swiper-slide:hover::before {
     opacity: 1;
 }
-

@@ -790,19 +790,41 @@ body {
 .festival-list {
     border-right: 2px solid white;
     flex: 1;
+    padding-top: 45px;
 }
 
 .festival-list li {
-    color: #dab67d;
-    list-style: none;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    cursor: pointer;
+  position: relative;
+  color: #dab67d;
+  font-size: 20px;
+  list-style: none;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-.festival-list li:hover {
-    color: #fff;
+.festival-list li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #dab67d;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.festival-list li:hover.active {
+  color: #fff;
+  font-weight: bold;
+}
+.festival-list li:hover::after,
+.festival-list li.active::after {
+  transform: scaleX(1);
 }
 
 .festival-item-selected {
@@ -811,15 +833,55 @@ body {
 }
 
 h3 {
+    padding-top: 20px;
     padding-bottom: 20px;
 
+}
+.festival-mid h3{
+    color: #ccc;
+    text-align: center;
+    font-size: 20px;
 }
 
 #festival-info li {
     padding-bottom: 20px;
     cursor: pointer;
+    font-size: 20px;
+    color: #ccc;
 }
 
+#festival-info li{
+  position: relative;
+  color: #ccc;
+  font-size: 20px;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+#festival-info li::after {
+content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+
+}
+#festival-info li:hover.active {
+  color: #fff;
+  font-weight: bold;
+}
+#festival-info li:hover::after,
+#festival-info li.active::after {
+  transform: scaleX(1);
+}
 #festival-detail {
     margin-top: 50px;
     padding: 20px;
@@ -847,6 +909,7 @@ h3 {
     font-size: 30;
     font-weight: bold;
     padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 .festival-detail {
@@ -1017,7 +1080,6 @@ h3 {
 .vil-sider-item.active img:nth-child(2) {
     display: none;
 }
-
 .vil-sider-item:hover img {
     filter: brightness(1) contrast(1.2);
 }
@@ -1180,3 +1242,5 @@ h3 {
 .vil-swiper .swiper-slide:hover::before {
     opacity: 1;
 }
+/*# sourceMappingURL=style.css.map */
+

@@ -718,27 +718,26 @@ body {
 }
 
 .slideshow div:nth-child(1) {
-    background-image: url("/Frontend_Festival_Hue_2025/assets/images/page1-1.jpg");
+    background-image: url("../images/page1-1.jpg");
     animation-delay: 0s;
 }
 
 .slideshow div:nth-child(2) {
-    background-image: url("/Frontend_Festival_Hue_2025/assets/images/page1-2.jpg");
+    background-image: url("../images/page1-2.jpg");
     animation-delay: 5s;
 }
-
 .slideshow div:nth-child(3) {
-    background-image: url("/Frontend_Festival_Hue_2025/assets/images/page1-3.jpg");
+    background-image: url("../images/page1-3.jpg");
     animation-delay: 10s;
 }
 
 .slideshow div:nth-child(4) {
-    background-image: url("/Frontend_Festival_Hue_2025/assets/images/page1-4.jpg");
+    background-image: url("../images/page1-4.jpg");
     animation-delay: 15s;
 }
 
 .slideshow div:nth-child(4) {
-    background-image: url("/Frontend_Festival_Hue_2025/assets/images/page1-5.jpg");
+    background-image: url("../images/page1-5.jpg");
     animation-delay: 20s;
 }
 
@@ -804,10 +803,13 @@ body {
 .festival-list li:hover {
     color: #fff;
 }
-
+.festival-item{
+    font-size: 20px;
+}
 .festival-item-selected {
     color: #fff !important;
     font-weight: bold;
+    font-size: 20px;
 }
 
 h3 {
@@ -818,6 +820,7 @@ h3 {
 #festival-info li {
     padding-bottom: 20px;
     cursor: pointer;
+    font-size: 20px;
 }
 
 #festival-detail {
@@ -883,6 +886,12 @@ h3 {
 }
 .festival-mid{
     width: 15%;
+
+}
+#festival-title{
+    margin-bottom: 20px;
+
+
 }
 /* Village Section - Enhanced Design */
 #vil {

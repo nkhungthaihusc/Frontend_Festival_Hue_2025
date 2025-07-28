@@ -48,7 +48,7 @@ const festivalData = {
         history: "<p>Trải qua nhiều thế hệ, áo dài Huế vẫn chưa từng một phút giây nào mai một cả. Sự hình thành của áo dài xứ Huế là bắt đầu từ vương triều nhà Nguyễn. Và một dấu mốc vô cùng quan trọng của trang phục áo dài xứ Huế là vào năm 1744. Khi chúa Nguyễn Phúc Khoát lên ngôi ở Phú Xuân thì đã đưa ra nhiều chủ trương thay đổi y phục.</p><p>Trong giai đoạn từ 1802-1945 khi triều đình Nguyễn muốn thống nhất y phục. Đây chính là thời điểm người phụ nữ cố đô nói riêng và phụ nữ Việt thường xuyên mang tà áo dài nhất. Thời đó, áo dài được chuyên dụng trong cả triều đình lẫn người dân. Tuy nhiên, áo dài cung đình Huế vẫn mang nét cao sang hơn hẳn. Dần dần thì tà áo dài đã ăn sâu vào tiềm thức của người dân và trở thành một bộ trang phục chuyên dụng nhất ở cố đô và cả nước ta.</p>",
         main: "<p>Cùng với sự hình thành và phát triển của vùng đất Thuận Hóa – Phú Xuân – Thừa Thiên Huế. Áo dài Huế đã phát triển một chặng đường dài với nhiều thăng trầm của lịch sử. Dù qua bao nhiêu năm, áo dài cố đô vẫn giữ riêng nét kín đáo, thùy mị, toát lên một vẻ thần thái của người phụ nữ Huế trong cách đi đứng, lễ nghĩa nói năng, cư xử. Áo dài cố đô không dài chấm gót cũng không xẻ tà quá cao. Cổ áo cao vừa phải, có đường eo được chiết ôm lấy đường cong thanh mảnh của cơ thể. Không quá bó sát giúp người phụ nữ giữ được nét thanh lịch, không hề lẳng lơ. </p><p>Đối với người đàn ông, áo dài thể hiện được phong thái đỉnh đạc, chính nhân quân tử. Nó đã gắn liền với thước đo “Nhân – Lễ – Nghĩa – Trí – Tín”. Áo dài sẽ được giới đàn ông mặc vào dịp lễ Tết, ngày hội truyền thống hay khi tham gia các việc của làng, họ. </p><p>Cũng chính vì những điều kể trên mà áo dài đã trở thành hình ảnh không thể nào xa rời được người dân cố đô. Đặc biệt, tà áo dài cũng đã được tôn vinh trong nhiều lễ hội truyền thống và hiện đại. Trong đó có các kỳ Festival, trở thành một điểm nét văn hóa đặc sắc của Huế. </p>",
         mean: "<p>Áo dài Huế từ xưa cho đến nay đều vẫn luôn giữ được những nét đẹp vô cùng trang nhã. Là một trang phục truyền thống, áo dài của cố đô mang trong mình những ý nghĩa đẹp đẽ. </p><h3>Áo dài cố đô chính là một nhân chứng lịch sử</h3><p>Từ khi hình thành, đi qua bao chặng đường của những cuộc chiến tranh khói lửa. Đi qua bao nhiêu thập niên khó khăn, từ vất vả cơ cực đến tỏa nắng rực rỡ. Áo dài luôn được may dù vẫn được giữ gìn theo nét cũ nhưng lại được biến tấu rất nhiều. Với tâm sức và tình cảm của những thợ may, đã tạo nên những tà áo cho đàn ông – phụ nữ vô cùng đẹp đẽ. Qua bao nhiêu thăng trầm, tà áo dài Huế luôn là một nhân chứng đã tận mắt chứng kiến tất cả những thay đổi lịch sử của dân tộc.</p><h3>Áo dài là thước đo uốn nắn người con gái</h3><p>Áo dài không chỉ là trang phục cho những người đàn ông thực hiện việc lớn. Mà còn là trang phục điểm xuyến và tăng thêm phần nét đẹp của người con gái. Áo dài được xem là cây thước, có thể đo đạc, uốn nắn cho mỗi người phụ nữ. Là cây thước vô hình tăng thêm nét duyên dáng, đằm thắm. Giúp người con gái kìm nén được những bồng bột, tạo nên những bước khoan thai trang nhã. Áo dài gắn bó với người con gái với thời gian rất dài. Kể cả thời học sinh cho đến những dịp cưới hỏi, tiệc tùng của làng, của họ,…</p><h3>Thể hiện truyền thống văn hóa dân tộc </h3><p>Áo dài không chỉ giúp hình tượng người con gái được giữ mãi trong nét duyên dáng, đằm thắm. Mà còn là trang phục truyền thống gắn bó với văn hóa dân tộc nói chung và đời sống người dân xứ Huế nói riêng. Cũng chính vì thế mà trong bao nhiêu kỳ Festival tà áo dài vẫn gắn bó mãi. Đặc biệt là Festival Huế năm 2018 với chủ đề “Huế vàng son”. Đã để lại nhiều cảm xúc trong lòng người dân Huế cũng như những du khách khi được chứng kiến sự biểu diễn của hơn 400 mẫu áo dài tinh xảo.</p>",
-        image:["ao-dai-1.jpg" ,"ao-dai-2.jpg" , "ao-dai-3.jpg" , "ao-dai-4.jpg" , "ao-dai-5.jpg"]
+        image: ["ao-dai-1.jpg", "ao-dai-2.jpg", "ao-dai-3.jpg", "ao-dai-4.jpg", "ao-dai-5.jpg"]
     },
     // Thêm các lễ hội khác tại đây
 };
@@ -92,23 +92,23 @@ function showFestival(key) {
     //Đổi title
     document.getElementById("intro").innerHTML = data.info[0];
     document.getElementById("festival-detail-intro").innerHTML = data.intro;
-    document.getElementById("festival-main-img1").src ="assets/images/" + data.image[0];
+    document.getElementById("festival-main-img1").src = "assets/images/" + data.image[0];
 
     document.getElementById("time").innerHTML = data.info[1];
     document.getElementById("festival-detail-time").innerHTML = data.time;
-    document.getElementById("festival-main-img2").src ="assets/images/" + data.image[1];
+    document.getElementById("festival-main-img2").src = "assets/images/" + data.image[1];
 
     document.getElementById("history").innerHTML = data.info[2];
     document.getElementById("festival-detail-history").innerHTML = data.history;
-    document.getElementById("festival-main-img3").src ="assets/images/" + data.image[2];
+    document.getElementById("festival-main-img3").src = "assets/images/" + data.image[2];
 
     document.getElementById("main").innerHTML = data.info[3];
     document.getElementById("festival-detail-main").innerHTML = data.main;
-    document.getElementById("festival-main-img4").src ="assets/images/" + data.image[3];
+    document.getElementById("festival-main-img4").src = "assets/images/" + data.image[3];
 
     document.getElementById("mean").innerHTML = data.info[4];
     document.getElementById("festival-detail-mean").innerHTML = data.mean;
-    document.getElementById("festival-main-img5").src ="assets/images/" + data.image[4];
+    document.getElementById("festival-main-img5").src = "assets/images/" + data.image[4];
 }
 const festivalItems = document.querySelectorAll('.festival-list li');
 const imgContainer = document.getElementById('festival-img');
@@ -125,5 +125,20 @@ festivalItems.forEach(item => {
             top: 0,
             behavior: 'smooth'
         });
+    });
+});
+
+
+document.querySelectorAll('#festival-info li').forEach(item => {
+    item.addEventListener('click', () => {
+        const sectionId = item.innerText.toLowerCase()
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // remove accents
+            .replace(/\s+/g, '-') // replace spaces with dashes
+            .replace(/[^\w\-]+/g, ''); // remove special characters
+
+        const sectionElement = document.getElementById(sectionId);
+        if (sectionElement) {
+            sectionElement.scrollIntoView({ behavior: 'smooth' });
+        }
     });
 });

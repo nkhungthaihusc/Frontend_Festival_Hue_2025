@@ -20,7 +20,7 @@
    },
    {
      name: "Nem lụi Huế",
-     image: "https://scontent.fdad3-3.fna.fbcdn.net/v/t39.30808-6/474763494_1787659568700198_2298384417597070501_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=kPEXyzHZj68Q7kNvwHpGauX&_nc_oc=AdnVzJX6rH69ts4Wqq2S6XQQusyiaNsYg3hgZIhOAVEK8urXi-iDoDijoNEsfmgWxK4HfmJsihrvbwneHGoleO5c&_nc_zt=23&_nc_ht=scontent.fdad3-3.fna&_nc_gid=JtPMC2HrTRyUQWiVl5QTBg&oh=00_AfT6SXS1x6Vd7LFw8619Oa76NjyZM8XxQosRF5mrk-Thog&oe=68812428",
+     image: "https://dulichvietnam.com.vn/vnt_upload/news/07_2024/quan_nem_lui_ngon_o_hue.jpg",
      description: "Thịt heo xay nhuyễn, ướp đậm đà rồi nướng trên que sả thơm lừng. Khi ăn, thường được cuốn cùng bánh tráng, rau sống và chấm nước lèo làm từ gan và đậu phộng, tạo nên hương vị béo bùi, đậm chất miền Trung."
    },
    {
@@ -60,15 +60,15 @@
    loop: true,
    loopedSlides: 1,
    speed: 380,
-  //  autoplay: {
-  //    delay: 5000, // tự động chuyển sau 1j
-  //    disableOnInteraction: false, // false: sẽ tiếp tục chạy kể cả khi người dùng chạm ->true: ngược lại
-  //  },
-    navigation: {
-      nextEl: ".food-next",
-      prevEl: ".food-prev",
-    },
-    
+   //  autoplay: {
+   //    delay: 5000, // tự động chuyển sau 1j
+   //    disableOnInteraction: false, // false: sẽ tiếp tục chạy kể cả khi người dùng chạm ->true: ngược lại
+   //  },
+   navigation: {
+     nextEl: ".food-next",
+     prevEl: ".food-prev",
+   },
+
  });
  const foodContents = document.querySelectorAll(".food-content");
 
@@ -101,15 +101,15 @@
 
  const festivalImages = [{
      year: 2024,
-     src: "https://scontent.fdad3-3.fna.fbcdn.net/v/t39.30808-6/475040233_1792271124905709_7120333988634459164_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_ohc=1yq4oq3CW5MQ7kNvwE527kl&_nc_oc=AdnpiZvEiDY-BT5XAMMBvHoBXdZn9q3feCbwB0CVx1jTThQrcdIFrYnDSoMSAzy89un4tDbD7od9KmcYpRQdfuaM&_nc_zt=23&_nc_ht=scontent.fdad3-3.fna&_nc_gid=LkoeOibsep_kkvfuC83SGg&oh=00_AfRTO8ISMFY5cWZ2nvzMVPJHsX4SvjGg2JqGAalNr_v2wQ&oe=688149DD"
+     src: "assets/images/lib-1.jpg"
    },
    {
      year: 2023,
-     src: "https://scontent.fdad3-3.fna.fbcdn.net/v/t39.30808-6/475729631_1792271198239035_710147985674176465_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f727a1&_nc_ohc=qqSryQOcl1sQ7kNvwGfbuuQ&_nc_oc=AdlRipw6b5l7s-_sNZZUrgpI2GHVQFzKE_qRvI9WZNSqa0shq84uiYVjgIi41ge7tj0sHJi4hKF8DkpF0LJYKIU8&_nc_zt=23&_nc_ht=scontent.fdad3-3.fna&_nc_gid=pVxOpZ-LUBkR1GgTetRv-w&oh=00_AfTaEW13J5BDbGBBVbCGJ02fd75dprxN4OO0sPLlt8CZwQ&oe=68814986"
+     src: "assets/images/lib-5.jpg"
    },
    {
      year: 2022,
-     src: "https://scontent.fdad3-3.fna.fbcdn.net/v/t39.30808-6/475730548_1792095868256568_1687837461479526516_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=f727a1&_nc_ohc=erxn0_ZfHWIQ7kNvwEpIBlo&_nc_oc=Adm-hQ4FF0dJ8u12gYJXLCKytY06uAJphHGnvLLEQPLAzlxTtXSYZ1l7jrWA1zsm29bI_mfebj6rSjGxPkxgNtSM&_nc_zt=23&_nc_ht=scontent.fdad3-3.fna&_nc_gid=s7kQPFf-vC8Ds21truITmQ&oh=00_AfTvwdIcPWyq0oI69gGD3G3b3xZTNKkNtwyfcqQbZrwzng&oe=688157B5"
+     src: "assets/images/lib-4.jpg"
    }
  ];
  //  const libNameBox = document.querySelector('.lib-name-box');
@@ -178,53 +178,61 @@
 
 
  //vil swiper
-const craftVillages = [
-  {
-    title: "Làng nón lá Phú Cam",
-    description: "Nổi tiếng với những chiếc nón bài thơ mang vẻ đẹp dịu dàng và lãng mạn của xứ Huế. Mỗi chiếc nón được chằm tỉ mỉ và có thể ẩn hiện hình ảnh hoặc bài thơ dưới ánh nắng.",
-    image: [
-      "https://i2.ex-cdn.com/crystalbay.com/files/content/2024/08/29/lang-non-phu-cam-5-1040.jpg",
-      "https://vietnamtourism.vn/imguploads/tourist/58Langnonphucam01.jpg",
-      "https://i2.ex-cdn.com/crystalbay.com/files/content/2024/08/29/lang-non-phu-cam-4-1032.jpg",
-    ]
-  },
-  
-  {
-    title: "Làng gốm Phước Tích",
-    description: "Nổi tiếng với gốm không men, nung bằng rơm tạo màu sắc nâu đỏ đặc trưng. Đồ gốm bền chắc, mang vẻ đẹp mộc mạc và thanh lịch.",
-    image: [
-      "https://imagevietnam.vnanet.vn//MediaUpload/Org/2023/10/24/5224-12-45-34.jpg",
-      "https://images.baodantoc.vn/uploads/2023/Th%C3%A1ng%205/Ng%C3%A0y_31/Anh/Gom%20co/14.jpg",
-      "https://imagevietnam.vnanet.vn//MediaUpload/Org/2023/10/24/1424-12-37-10.jpg",
-    ]
-  },
-  {
-    title: "Làng tranh dân gian Sình",
-    description: "Làng nghề tranh dân gian phục vụ nghi lễ tín ngưỡng. Tranh được in từ bản gỗ và tô màu thủ công bằng nguyên liệu tự nhiên, mang đậm nét văn hóa dân gian Huế.",
-    image: [
-      "https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2023/2/26/1151746/ANH-1.jpg",
-      "https://i.ex-cdn.com/vntravellive.com/files/hangh.vntravel/2023/01/17/5322-lang-tranh-sinh-phong-cach-hoi-hoa-khac-biet-cua-xu-hue-105235.jpg",
-      "https://orientalrain.com/wp-content/uploads/2023/12/tranh-lang-sinh-top-view-1400x677.jpg"
+ const craftVillages = [{
+     title: "Làng nón lá Phú Cam",
+     description: "Nổi tiếng với những chiếc nón bài thơ mang vẻ đẹp dịu dàng và lãng mạn của xứ Huế. Mỗi chiếc nón được chằm tỉ mỉ và có thể ẩn hiện hình ảnh hoặc bài thơ dưới ánh nắng.",
+     image: [
+       "https://i2.ex-cdn.com/crystalbay.com/files/content/2024/08/29/lang-non-phu-cam-5-1040.jpg",
+       "https://vietnamtourism.vn/imguploads/tourist/58Langnonphucam01.jpg",
+       "https://i2.ex-cdn.com/crystalbay.com/files/content/2024/08/29/lang-non-phu-cam-4-1032.jpg",
+     ]
+   },
 
-    ]
-  }
-];
+   {
+     title: "Làng gốm Phước Tích",
+     description: "Nổi tiếng với gốm không men, nung bằng rơm tạo màu sắc nâu đỏ đặc trưng. Đồ gốm bền chắc, mang vẻ đẹp mộc mạc và thanh lịch.",
+     image: [
+       "https://imagevietnam.vnanet.vn//MediaUpload/Org/2023/10/24/5224-12-45-34.jpg",
+       "https://images.baodantoc.vn/uploads/2023/Th%C3%A1ng%205/Ng%C3%A0y_31/Anh/Gom%20co/14.jpg",
+       "https://imagevietnam.vnanet.vn//MediaUpload/Org/2023/10/24/1424-12-37-10.jpg",
+     ]
+   },
+   {
+     title: "Làng tranh dân gian Sình",
+     description: "Làng nghề tranh dân gian phục vụ nghi lễ tín ngưỡng. Tranh được in từ bản gỗ và tô màu thủ công bằng nguyên liệu tự nhiên, mang đậm nét văn hóa dân gian Huế.",
+     image: [
+       "https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2023/2/26/1151746/ANH-1.jpg",
+       "https://i.ex-cdn.com/vntravellive.com/files/hangh.vntravel/2023/01/17/5322-lang-tranh-sinh-phong-cach-hoi-hoa-khac-biet-cua-xu-hue-105235.jpg",
+       "https://orientalrain.com/wp-content/uploads/2023/12/tranh-lang-sinh-top-view-1400x677.jpg"
+
+     ]
+   },
+   {
+     title: "Làng nghề đúc đồng",
+     description: "Nghề đúc đồng là nghề truyền thống lâu đời của người Việt nói chung và người Huế nói riêng, đúc đông chính là 1 trong những làng nghề nổi tiếng ở Huế. Một địa điểm cho du khách có thể tìm hiểu về nghề đặc biệt này đó là phường Đúc. Khi Kinh thành Phú Xuân bị đánh chiếm thì các Công tượng đúc đồng cũng bị tan rã. Tuy nhiên, rất may nhờ những lò đúc của các anh em nhà họ Nguyễn mà làng nghề độc đáo này được lưu giữ cho đến ngày hôm nay. Làng đúc đồng nằm ở ven bờ nam sông Hương, đoạn từ cầu Giã Viên lên phía Long Thọ cách thành phố Huế khoảng 3km về phía Tây Nam, tỉnh Thừa Thiên Huế.",
+     image:[
+        "https://www.nongthonmoithuathienhue.vn/imgs/Thu_muc_he_thong/_Nam_2016/_Thang_12/cosoducdongngvansinh1234.jpg",
+        "https://vietnamtourism.vn/imguploads/tourist/58Ducdonghue01.jpg",
+        "https://ducdong.vn/wp-content/uploads/2017/05/phuong-duc-hue.jpg",
+     ]
+    }
+ ];
 
 
 
 
 
 
-const vilSwiperWrapper = document.querySelector('.vil-swiper .swiper-wrapper');
-if (vilSwiperWrapper) {
-  vilSwiperWrapper.innerHTML = craftVillages[0].image.map(img => `
+ const vilSwiperWrapper = document.querySelector('.vil-swiper .swiper-wrapper');
+ if (vilSwiperWrapper) {
+   vilSwiperWrapper.innerHTML = craftVillages[0].image.map(img => `
     <div class="swiper-slide">
       <img src="${img}" alt="${craftVillages[0].title}" />
     </div>
   `).join('');
-}
+ }
 
-var vilSwiper = new Swiper(".vil-swiper", {
+ var vilSwiper = new Swiper(".vil-swiper", {
    slidesPerView: 'auto',
    spaceBetween: 15,
    loopedSlides: 1,
@@ -242,129 +250,129 @@ var vilSwiper = new Swiper(".vil-swiper", {
      delay: 4000,
      disableOnInteraction: false,
    },
-});
+ });
 
-// Enhanced update function with smooth transitions
-function updateVillageContent(villageIndex) {
-  const village = craftVillages[villageIndex];
-  
-  // Add fade-out effect before updating content
-  const detailElement = document.querySelector('.vil-detail');
-  if (detailElement) {
-    detailElement.style.opacity = '0.7';
-    detailElement.style.transform = 'translateY(10px)';
-  }
-  
-  setTimeout(() => {
-    // Update title with typewriter effect
-    const titleElement = document.querySelector('.vil-title h3');
-    if (titleElement) {
-      titleElement.style.opacity = '0';
-      setTimeout(() => {
-        titleElement.textContent = village.title;
-        titleElement.style.opacity = '1';
-        titleElement.style.transform = 'translateY(0)';
-      }, 200);
-    }
-    
-    // Update description with fade effect
-    const descriptionElement = document.querySelector('.vil-des');
-    if (descriptionElement) {
-      descriptionElement.style.opacity = '0';
-      setTimeout(() => {
-        descriptionElement.textContent = village.description;
-        descriptionElement.style.opacity = '1';
-      }, 300);
-    }
+ // Enhanced update function with smooth transitions
+ function updateVillageContent(villageIndex) {
+   const village = craftVillages[villageIndex];
 
-    // Update swiper images with smooth transition
-    if (vilSwiperWrapper && vilSwiper) {
-      vilSwiperWrapper.innerHTML = village.image.map((img, index) => `
+   // Add fade-out effect before updating content
+   const detailElement = document.querySelector('.vil-detail');
+   if (detailElement) {
+     detailElement.style.opacity = '0.7';
+     detailElement.style.transform = 'translateY(10px)';
+   }
+
+   setTimeout(() => {
+     // Update title with typewriter effect
+     const titleElement = document.querySelector('.vil-title h3');
+     if (titleElement) {
+       titleElement.style.opacity = '0';
+       setTimeout(() => {
+         titleElement.textContent = village.title;
+         titleElement.style.opacity = '1';
+         titleElement.style.transform = 'translateY(0)';
+       }, 200);
+     }
+
+     // Update description with fade effect
+     const descriptionElement = document.querySelector('.vil-des');
+     if (descriptionElement) {
+       descriptionElement.style.opacity = '0';
+       setTimeout(() => {
+         descriptionElement.textContent = village.description;
+         descriptionElement.style.opacity = '1';
+       }, 300);
+     }
+
+     // Update swiper images with smooth transition
+     if (vilSwiperWrapper && vilSwiper) {
+       vilSwiperWrapper.innerHTML = village.image.map((img, index) => `
         <div class="swiper-slide" style="opacity: 0; transform: scale(0.9);">
           <img src="${img}" alt="${village.title}" onload="this.parentElement.style.opacity='1'; this.parentElement.style.transform='scale(1)';" />
         </div>
       `).join('');
-      
-      vilSwiper.update();
-      vilSwiper.slideTo(0, 500);
-    }
-    
-    // Restore detail element
-    if (detailElement) {
-      detailElement.style.opacity = '1';
-      detailElement.style.transform = 'translateY(0)';
-    }
-  }, 150);
-}
 
-// Enhanced interaction with visual feedback
-document.addEventListener('DOMContentLoaded', function() {
-  const siderItems = document.querySelectorAll('.vil-sider-item');
-  
-  siderItems.forEach((item, index) => {
-    // Add hover sound effect (visual feedback)
-    item.addEventListener('mouseenter', function() {
-      this.style.transform = 'scale(1.1)';
-    });
-    
-    item.addEventListener('mouseleave', function() {
-      if (!this.classList.contains('active')) {
-        this.style.transform = 'scale(1)';
-      }
-    });
-    
-    item.addEventListener('click', function(e) {
-      e.preventDefault();
-      
-      // Prevent multiple rapid clicks
-      if (this.dataset.updating === 'true') return;
-      this.dataset.updating = 'true';
-      
-      // Remove active class from all items with animation
-      siderItems.forEach(siderItem => {
-        siderItem.classList.remove('active');
-        if (siderItem !== this) {
-          siderItem.style.transform = 'scale(1)';
-        }
-      });
-      
-      // Add active class to clicked item
-      this.classList.add('active');
-      this.style.transform = 'scale(1.05)';
-      
-      // Update content
-      updateVillageContent(index);
-      
-      // Reset updating flag
-      setTimeout(() => {
-        this.dataset.updating = 'false';
-      }, 600);
-    });
-  });
-  
-  // Initialize first item as active
-  if (siderItems.length > 0) {
-    siderItems[0].classList.add('active');
-    siderItems[0].style.transform = 'scale(1.05)';
-    updateVillageContent(0);
-  }
-  
-  // Add keyboard navigation
-  document.addEventListener('keydown', function(e) {
-    const activeItem = document.querySelector('.vil-sider-item.active');
-    if (!activeItem) return;
-    
-    const items = Array.from(siderItems);
-    const currentIndex = items.indexOf(activeItem);
-    
-    if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
-      e.preventDefault();
-      const prevIndex = currentIndex > 0 ? currentIndex - 1 : items.length - 1;
-      items[prevIndex].click();
-    } else if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
-      e.preventDefault();
-      const nextIndex = currentIndex < items.length - 1 ? currentIndex + 1 : 0;
-      items[nextIndex].click();
-    }
-  });
-});
+       vilSwiper.update();
+       vilSwiper.slideTo(0, 500);
+     }
+
+     // Restore detail element
+     if (detailElement) {
+       detailElement.style.opacity = '1';
+       detailElement.style.transform = 'translateY(0)';
+     }
+   }, 150);
+ }
+
+ // Enhanced interaction with visual feedback
+ document.addEventListener('DOMContentLoaded', function () {
+   const siderItems = document.querySelectorAll('.vil-sider-item');
+
+   siderItems.forEach((item, index) => {
+     // Add hover sound effect (visual feedback)
+     item.addEventListener('mouseenter', function () {
+       this.style.transform = 'scale(1.1)';
+     });
+
+     item.addEventListener('mouseleave', function () {
+       if (!this.classList.contains('active')) {
+         this.style.transform = 'scale(1)';
+       }
+     });
+
+     item.addEventListener('click', function (e) {
+       e.preventDefault();
+
+       // Prevent multiple rapid clicks
+       if (this.dataset.updating === 'true') return;
+       this.dataset.updating = 'true';
+
+       // Remove active class from all items with animation
+       siderItems.forEach(siderItem => {
+         siderItem.classList.remove('active');
+         if (siderItem !== this) {
+           siderItem.style.transform = 'scale(1)';
+         }
+       });
+
+       // Add active class to clicked item
+       this.classList.add('active');
+       this.style.transform = 'scale(1.05)';
+
+       // Update content
+       updateVillageContent(index);
+
+       // Reset updating flag
+       setTimeout(() => {
+         this.dataset.updating = 'false';
+       }, 600);
+     });
+   });
+
+   // Initialize first item as active
+   if (siderItems.length > 0) {
+     siderItems[0].classList.add('active');
+     siderItems[0].style.transform = 'scale(1.05)';
+     updateVillageContent(0);
+   }
+
+   // Add keyboard navigation
+   document.addEventListener('keydown', function (e) {
+     const activeItem = document.querySelector('.vil-sider-item.active');
+     if (!activeItem) return;
+
+     const items = Array.from(siderItems);
+     const currentIndex = items.indexOf(activeItem);
+
+     if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+       e.preventDefault();
+       const prevIndex = currentIndex > 0 ? currentIndex - 1 : items.length - 1;
+       items[prevIndex].click();
+     } else if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+       e.preventDefault();
+       const nextIndex = currentIndex < items.length - 1 ? currentIndex + 1 : 0;
+       items[nextIndex].click();
+     }
+   });
+ });

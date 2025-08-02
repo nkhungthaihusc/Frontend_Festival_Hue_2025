@@ -50,44 +50,127 @@
    foodSwiperWrapper.innerHTML = hueFoods.map(food => `
     <div class="swiper-slide">
       <img src="${food.image}" alt="${food.name}" />
+      <div class="food-overlay">
+        <h3>${food.name}</h3>
+        <p>${food.description.substring(0, 100)}...</p>
+      </div>
     </div>
   `).join('');
  }
 
  var foodSwiper = new Swiper(".food-swiper", {
    slidesPerView: 3,
-   spaceBetween: 5,
+   spaceBetween: 8,
    loop: true,
    loopedSlides: 1,
-   speed: 380,
+   speed: 600,
+   effect: 'slide',
+   centeredSlides: false,
+   allowTouchMove: false, // Disable touch/swipe gestures
+   mousewheel: false, // Disable mouse wheel scrolling
+   keyboard: false, // Disable keyboard navigation
    //  autoplay: {
-   //    delay: 5000, // tự động chuyển sau 1j
+   //    delay: 5000, // tự động chuyển sau 5s
    //    disableOnInteraction: false, // false: sẽ tiếp tục chạy kể cả khi người dùng chạm ->true: ngược lại
    //  },
-   navigation: {
-     nextEl: ".food-next",
-     prevEl: ".food-prev",
-   },
 
+   breakpoints: {
+     320: {
+       slidesPerView: 1,
+       spaceBetween: 10
+     },
+     768: {
+       slidesPerView: 2,
+       spaceBetween: 15
+     },
+     1024: {
+       slidesPerView: 3,
+       spaceBetween: 8
+     }
+   },
+   on: {
+     init: function () {
+       this.slides.forEach((slide, index) => {
+         slide.style.opacity = '0';
+         slide.style.transform = 'translateY(50px)';
+         setTimeout(() => {
+           slide.style.transition = 'all 0.6s ease';
+           slide.style.opacity = '1';
+           slide.style.transform = 'translateY(0)';
+         }, index * 100);
+       });
+     }
+   }
  });
  const foodContents = document.querySelectorAll(".food-content");
 
+ function setActiveContent(index) {
+   foodContents.forEach((el, idx) => {
+     if (idx === index) {
+       el.classList.add("active");
+       el.style.opacity = '1';
+       el.style.transform = 'translateY(0)';
+     } else {
+       el.classList.remove("active");
+       el.style.opacity = '0';
+       el.style.transform = 'translateY(20px)';
+     }
+   });
+ }
+
+ setActiveContent(0);
+
+ let isTransitioning = false;
+
  foodSwiper.on("slideChange", () => {
+   if (isTransitioning) return;
+   isTransitioning = true;
+
    const realIndex = foodSwiper.realIndex;
-   foodContents.forEach((el) => el.classList.remove("active"));
-   if (foodContents[realIndex]) {
-     foodContents[realIndex].classList.add("active");
-   }
+
+   setTimeout(() => {
+     setActiveContent(realIndex);
+     setTimeout(() => {
+       isTransitioning = false;
+     }, 100);
+   }, 150);
  });
+
  foodSwiper.slides.forEach((slideEl) => {
    slideEl.addEventListener("click", () => {
+     if (isTransitioning) return;
+     isTransitioning = true;
+
      const realIndex = parseInt(
        slideEl.getAttribute("data-swiper-slide-index")
      );
+
+     slideEl.style.transform = 'scale(0.95)';
+     setTimeout(() => {
+       slideEl.style.transform = '';
+     }, 150);
+
      foodSwiper.slideToLoop(realIndex);
-     foodContents.forEach((el) => el.classList.remove("active"));
-     if (foodContents[realIndex]) {
-       foodContents[realIndex].classList.add("active");
+
+     setTimeout(() => {
+       setActiveContent(realIndex);
+       setTimeout(() => {
+         isTransitioning = false;
+       }, 100);
+     }, 200);
+   });
+
+   slideEl.addEventListener("mouseenter", () => {
+     if (!slideEl.classList.contains('swiper-slide-active')) {
+       slideEl.style.transform = 'scale(0.95)';
+       slideEl.style.filter = 'brightness(1.1)';
+     }
+   });
+
+   slideEl.addEventListener("mouseleave", () => {
+     if (!slideEl.classList.contains('swiper-slide-active')) {
+       slideEl.style.transform = '';
+       slideEl.style.filter = '';
      }
    });
  });
@@ -210,12 +293,12 @@
    {
      title: "Làng nghề đúc đồng",
      description: "Nghề đúc đồng là nghề truyền thống lâu đời của người Việt nói chung và người Huế nói riêng, đúc đông chính là 1 trong những làng nghề nổi tiếng ở Huế. Một địa điểm cho du khách có thể tìm hiểu về nghề đặc biệt này đó là phường Đúc. Khi Kinh thành Phú Xuân bị đánh chiếm thì các Công tượng đúc đồng cũng bị tan rã. Tuy nhiên, rất may nhờ những lò đúc của các anh em nhà họ Nguyễn mà làng nghề độc đáo này được lưu giữ cho đến ngày hôm nay. Làng đúc đồng nằm ở ven bờ nam sông Hương, đoạn từ cầu Giã Viên lên phía Long Thọ cách thành phố Huế khoảng 3km về phía Tây Nam, tỉnh Thừa Thiên Huế.",
-     image:[
-        "https://www.nongthonmoithuathienhue.vn/imgs/Thu_muc_he_thong/_Nam_2016/_Thang_12/cosoducdongngvansinh1234.jpg",
-        "https://vietnamtourism.vn/imguploads/tourist/58Ducdonghue01.jpg",
-        "https://ducdong.vn/wp-content/uploads/2017/05/phuong-duc-hue.jpg",
+     image: [
+       "https://www.nongthonmoithuathienhue.vn/imgs/Thu_muc_he_thong/_Nam_2016/_Thang_12/cosoducdongngvansinh1234.jpg",
+       "https://vietnamtourism.vn/imguploads/tourist/58Ducdonghue01.jpg",
+       "https://ducdong.vn/wp-content/uploads/2017/05/phuong-duc-hue.jpg",
      ]
-    }
+   }
  ];
 
 
@@ -252,11 +335,9 @@
    },
  });
 
- // Enhanced update function with smooth transitions
  function updateVillageContent(villageIndex) {
    const village = craftVillages[villageIndex];
 
-   // Add fade-out effect before updating content
    const detailElement = document.querySelector('.vil-detail');
    if (detailElement) {
      detailElement.style.opacity = '0.7';
@@ -264,7 +345,6 @@
    }
 
    setTimeout(() => {
-     // Update title with typewriter effect
      const titleElement = document.querySelector('.vil-title h3');
      if (titleElement) {
        titleElement.style.opacity = '0';
@@ -275,7 +355,6 @@
        }, 200);
      }
 
-     // Update description with fade effect
      const descriptionElement = document.querySelector('.vil-des');
      if (descriptionElement) {
        descriptionElement.style.opacity = '0';
@@ -285,7 +364,6 @@
        }, 300);
      }
 
-     // Update swiper images with smooth transition
      if (vilSwiperWrapper && vilSwiper) {
        vilSwiperWrapper.innerHTML = village.image.map((img, index) => `
         <div class="swiper-slide" style="opacity: 0; transform: scale(0.9);">
@@ -297,7 +375,6 @@
        vilSwiper.slideTo(0, 500);
      }
 
-     // Restore detail element
      if (detailElement) {
        detailElement.style.opacity = '1';
        detailElement.style.transform = 'translateY(0)';
@@ -305,12 +382,10 @@
    }, 150);
  }
 
- // Enhanced interaction with visual feedback
  document.addEventListener('DOMContentLoaded', function () {
    const siderItems = document.querySelectorAll('.vil-sider-item');
 
    siderItems.forEach((item, index) => {
-     // Add hover sound effect (visual feedback)
      item.addEventListener('mouseenter', function () {
        this.style.transform = 'scale(1.1)';
      });
@@ -324,11 +399,9 @@
      item.addEventListener('click', function (e) {
        e.preventDefault();
 
-       // Prevent multiple rapid clicks
        if (this.dataset.updating === 'true') return;
        this.dataset.updating = 'true';
 
-       // Remove active class from all items with animation
        siderItems.forEach(siderItem => {
          siderItem.classList.remove('active');
          if (siderItem !== this) {
@@ -336,28 +409,23 @@
          }
        });
 
-       // Add active class to clicked item
        this.classList.add('active');
        this.style.transform = 'scale(1.05)';
 
-       // Update content
        updateVillageContent(index);
 
-       // Reset updating flag
        setTimeout(() => {
          this.dataset.updating = 'false';
        }, 600);
      });
    });
 
-   // Initialize first item as active
    if (siderItems.length > 0) {
      siderItems[0].classList.add('active');
      siderItems[0].style.transform = 'scale(1.05)';
      updateVillageContent(0);
    }
 
-   // Add keyboard navigation
    document.addEventListener('keydown', function (e) {
      const activeItem = document.querySelector('.vil-sider-item.active');
      if (!activeItem) return;

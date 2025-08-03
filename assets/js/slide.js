@@ -181,7 +181,7 @@
 const craftVillages = [
   {
     title: "Làng nón lá Phú Cam",
-    description: "Nổi tiếng với những chiếc nón bài thơ mang vẻ đẹp dịu dàng và lãng mạn của xứ Huế. Mỗi chiếc nón được chằm tỉ mỉ và có thể ẩn hiện hình ảnh hoặc bài thơ dưới ánh nắng.",
+    description: "Làng nón Phú Cam, một trong những làng nghề truyền thống nổi tiếng nhất xứ Huế, là nơi lưu giữ và phát huy truyền thống làm nón lá tinh xảo qua nhiều thế kỷ. Nằm bên dòng sông An Cựu hiền hòa, ngôi làng này không chỉ là điểm đến hấp dẫn cho du khách mà còn là niềm tự hào của người dân địa phương. Nổi tiếng với những chiếc nón bài thơ mang vẻ đẹp dịu dàng và lãng mạn của xứ Huế. Mỗi chiếc nón được chằm tỉ mỉ và có thể ẩn hiện hình ảnh hoặc bài thơ dưới ánh nắng. Phú Cam đã trở thành biểu tượng cho nét đẹp văn hóa và sự khéo léo của người dân cố đô.",
     image: [
       "https://i2.ex-cdn.com/crystalbay.com/files/content/2024/08/29/lang-non-phu-cam-5-1040.jpg",
       "https://vietnamtourism.vn/imguploads/tourist/58Langnonphucam01.jpg",
@@ -191,7 +191,7 @@ const craftVillages = [
   
   {
     title: "Làng gốm Phước Tích",
-    description: "Nổi tiếng với gốm không men, nung bằng rơm tạo màu sắc nâu đỏ đặc trưng. Đồ gốm bền chắc, mang vẻ đẹp mộc mạc và thanh lịch.",
+    description: "Làng cổ Phước Tích nằm bên bờ nam sông Ô Lâu, được công nhận là Di tích kiến trúc nghệ thuật cấp Quốc gia từ năm 2009. Làng nổi bật với những ngôi nhà rường cổ kính cùng nghề gốm truyền thống hàng trăm năm tuổi. Gốm Phước Tích đặc trưng bởi màu nâu đỏ tự nhiên, không men, được nung bằng rơm, tạo nên vẻ đẹp mộc mạc mà thanh lịch. Trong thời kỳ hưng thịnh, sản phẩm gốm nơi đây từng được buôn bán khắp các tỉnh miền Trung.",
     image: [
       "https://imagevietnam.vnanet.vn//MediaUpload/Org/2023/10/24/5224-12-45-34.jpg",
       "https://images.baodantoc.vn/uploads/2023/Th%C3%A1ng%205/Ng%C3%A0y_31/Anh/Gom%20co/14.jpg",
@@ -200,7 +200,7 @@ const craftVillages = [
   },
   {
     title: "Làng tranh dân gian Sình",
-    description: "Làng nghề tranh dân gian phục vụ nghi lễ tín ngưỡng. Tranh được in từ bản gỗ và tô màu thủ công bằng nguyên liệu tự nhiên, mang đậm nét văn hóa dân gian Huế.",
+    description: "Làng Sình còn được biết đến như một làng văn vật của đất cố đô, nơi còn lưu giữ nghề làm tranh cổ truyền và một hội vật nổi tiếng: “Dù ai đi đó đi đây - Đến ngày Hội vật nhớ quay về Sình”. Ngoài ra, làng còn có nghề làm hương và hạt bỏng dùng trong các nghi lễ cúng bái. Có lẽ do những truyền thống này mà nghề in tranh mộc bản ở Sình, ngay từ khi ra đời đã không thuần túy là dòng tranh phục vụ cho các thú chơi tao nhã, mà chủ yếu là nhu cầu tín ngưỡng, dùng để thờ, để hóa trong các lễ cầu an, giải hạn.",
     image: [
       "https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2023/2/26/1151746/ANH-1.jpg",
       "https://i.ex-cdn.com/vntravellive.com/files/hangh.vntravel/2023/01/17/5322-lang-tranh-sinh-phong-cach-hoi-hoa-khac-biet-cua-xu-hue-105235.jpg",

@@ -781,6 +781,7 @@ body {
     justify-content: center;
     align-items: center;
     /* background-image: url("../images/about3.jpg"); */
+    margin-left: 3%;
 }
 
 .about-wrapper {
@@ -816,12 +817,15 @@ body {
     color: #dab67d;
     font-size: 1.2rem;
     font-weight: bold;
+    border-radius: 6px;
+    border: 4px solid transparent;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .aboutItem:hover {
     background-color: #dab67d;
     color: white;
+    border: #ccc 4px solid;
 }
 
 .selectedAboutItem {
@@ -873,7 +877,10 @@ body {
 .about-text::-webkit-scrollbar {
     display: none;                 /* Chrome, Safari */
 }
-
+#about-mean{
+    white-space: pre-wrap;
+    line-height: 1.6;
+}
 .aboutContent .title-about-text {
     margin: 15px 0;
     text-transform: uppercase;

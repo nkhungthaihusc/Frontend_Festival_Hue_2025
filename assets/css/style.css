@@ -770,6 +770,132 @@ body {
     background-color: white;
 }
 
+
+/* about */
+.aboutBox {
+    width: 90%;
+    height: 90%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("../images/about3.jpg"); */
+}
+
+.about-wrapper {
+    width: 100%;
+    height: 100%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.aboutFes {
+    width: 25%;
+    display: flex;
+}
+
+.aboutFes ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutFes ul li {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    color: #dab67d;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.aboutItem:hover {
+    background-color: #dab67d;
+    color: white;
+}
+
+.selectedAboutItem {
+    background-color: #dab67d;
+    color: white !important;
+}
+
+
+.aboutContent {
+  width: 70%;
+  aspect-ratio: 15 / 9; 
+  position: relative;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: absolute;
+}
+
+
+.about-text {
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 30%;
+    overflow-y: auto;
+    padding: 0px 15px;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    /* Ẩn thanh cuộn */
+    scrollbar-width: none;         /* Firefox */
+    -ms-overflow-style: none;      /* IE */
+}
+
+.about-text::-webkit-scrollbar {
+    display: none;                 /* Chrome, Safari */
+}
+
+.aboutContent .title-about-text {
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.aboutFes .aboutContent h2 {
+    font-size: 2rem;
+    color: #dab67d;
+}
+
+.aboutFes .about-content p {
+    text-align: justify;
+    color: #f8f5f2;
+}
+
+
+
+
+
+
 /*culture*/
 .festival-wrapper {
     display: flex;

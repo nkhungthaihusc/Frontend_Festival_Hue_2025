@@ -10,8 +10,34 @@ tabs.forEach(tab => {
         target.classList.add('active');
         tab.classList.add('active');
     });
-
 })
+
+
+function switchTab(targetSelector) {
+    const targetTab = document.querySelector(`[data-tab-target="${targetSelector}"]`);
+    const targetContent = document.querySelector(targetSelector);
+    
+    if (targetTab && targetContent) {
+        tabContents.forEach(tc => tc.classList.remove('active'));
+        tabs.forEach(t => t.classList.remove('active'));
+        
+        targetContent.classList.add('active');
+        targetTab.classList.add('active');
+        
+        // Add smooth transition effect
+        targetContent.style.opacity = '0';
+        targetContent.style.transform = 'translateY(20px)';
+        
+        setTimeout(() => {
+            targetContent.style.transition = 'all 0.5s ease';
+            targetContent.style.opacity = '1';
+            targetContent.style.transform = 'translateY(0)';
+        }, 50);
+    }
+}
+
+
+window.switchTab = switchTab;
 
 
 

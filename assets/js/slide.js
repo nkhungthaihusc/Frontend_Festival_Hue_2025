@@ -74,7 +74,8 @@
    //    disableOnInteraction: false, // false: sẽ tiếp tục chạy kể cả khi người dùng chạm ->true: ngược lại
    //  },
 
-   on: {
+  on: {
+
      init: function () {
        this.slides.forEach((slide, index) => {
          slide.style.opacity = '0';

@@ -219,6 +219,7 @@
         gap: 30px;
         grid-template-columns: 1fr;
         padding: 1rem;
+        margin-top: 0;
     }
 
     #home .hero-text {
@@ -322,6 +323,7 @@
     #vil .vil-sider {
         width: 100%;
         height: auto;
+        flex-direction: row;
     }
 
     #vil .vil-sider-list {
@@ -330,6 +332,7 @@
         flex-wrap: wrap;
         gap: 15px;
         padding: 20px 0;
+        width: 70%;
     }
 
     #vil .vil-sider-item {
@@ -396,6 +399,7 @@
     #cul .festival-list {
         width: 40%;
         order: 2;
+        padding: 1rem 1.4rem;
     }
 
     #cul .festival-list ul {
@@ -408,7 +412,7 @@
     }
 
     #cul .festival-item {
-        padding: 15px 20px;
+        padding: .8rem 1rem;
         font-size: 1rem;
         text-align: center;
         background: rgba(218, 182, 125, 0.1);
@@ -530,6 +534,7 @@
         object-fit: cover;
     }
 
+
     /* LIBRARY SECTION - Mobile */
     #lib {
         padding: 40px 40px;
@@ -596,6 +601,13 @@
 
     #lib .lib-name {
         order: 2;
+    }
+    .lib-title::before{
+        display: none;
+    }
+    .lib-top::before{
+        bottom: -1rem!important;
+
     }
 
     /* Swiper responsive adjustments */

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festival Huế 2025</title>
+    <link rel="icon" href="./assets/images/logo-festival-hue-khong-nen.webp" type="image/png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="my-container">
+            <div class="nav-bar">
+                <div class="nav">
+                    <div class="nav-list">
+                        <div class="nav-item active" data-tab-target="#home">
+                            Trang chủ
+                        </div>
+                        <div class="nav-item" data-tab-target="#about">Giới thiệu</div>
+                        <div class="nav-item" data-tab-target="#vil">
+                            Làng nghề truyền thống
+                        </div>
+                        <div class="nav-item" data-tab-target="#cul">Văn hóa</div>
+                        <div class="nav-item" data-tab-target="#food">Ẩm thực</div>
+                        <div class="nav-item" data-tab-target="#lib">Thư viện</div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="./assets/images/logo-festival-hue-khong-nen.webp" alt="" />
+            </div>
+            <div class="components-wrapper">
+                <div class="slide active" data-tab-content id="home">
+                    <div class="home-container">
+                        <div class="slideshow">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <h1 class="hero-title">
+                                    <span class="title-line">Festival</span>
+                                    <span class="title-line highlight">Huế 2025</span>
+                                </h1>
+                                <p class="hero-subtitle">
+                                    Khám phá vẻ đẹp văn hóa ngàn năm của cố đô Huế
+                                </p>
+                                <div class="hero-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🏮</div>
+                                        <span>Văn hóa truyền thống</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🍜</div>
+                                        <span>Ẩm thực hoàng gia</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🎭</div>
+                                        <span>Nghệ thuật dân gian</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🏛️</div>
+                                        <span>Di sản thế giới</span>
+                                    </div>
+                                </div>
+                                <div class="hero-buttons">
+                                    <button class="btn-primary" onclick="switchTab('#cul')">
+                                        <span>Khám phá văn hóa</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                    <button class="btn-secondary" onclick="switchTab('#food')">
+                                        <span>Thưởng thức ẩm thực</span>
+                                        <i class="fas fa-utensils"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="festival-info-cards">
+                                <div class="info-card">
+                                    <div class="card-icon">📅</div>
+                                    <h3>Thời gian</h3>
+                                    <p>Tháng 4 - Tháng 8, 2025</p>
+                                </div>
+                                <div class="info-card">
+                                    <div class="card-icon">📍</div>
+                                    <h3>Địa điểm</h3>
+                                    <p>Cố đô Huế, Việt Nam</p>
+                                </div>
+                                <div class="info-card">
+                                    <div class="card-icon">🎪</div>
+                                    <h3>Sự kiện</h3>
+                                    <p>100+ hoạt động văn hóa</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="scroll-indicator">
+                            <div class="scroll-text">Cuộn để khám phá</div>
+                            <div class="scroll-arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide aboutBox" data-tab-content id="about">
+                    <div class="about-wrapper">
+                        <div class="aboutFes">
+                            <ul>
+                                <li class="aboutItem" gioi_thieu onclick="showEvent('gioi_thieu')" >Giới thiệu về Festival Huế</li>
+                                <li class="aboutItem" mua_xuan onclick="showEvent('mua_xuan')" >Lễ hội mùa Xuân</li>
+                                <li class="aboutItem" mua_ha onclick="showEvent('mua_ha')" >Lễ hội mùa Hạ</li>
+                                <li class="aboutItem" mua_thu onclick="showEvent('mua_thu')" >Lễ hội mùa Thu</li>
+                                <li class="aboutItem" mua_dong onclick="showEvent('mua_dong')" >Lễ hội mùa Đông</li>
+                            </ul>
+                        </div>
+                        <div class="aboutContent">
+                            <div  class="about-img">
+                                <div id="season-images" class="season-images"></div>
+                                <img id="season-hover-img" class="season-hover-img" style="display: none;">
+                                <div id="info-box" class="info-box" style="display: none;">Thông tin ảnh</div>
+                            </div>
+                            <div class="about-text">
+                                <h1 class="title-about-text" id="about-title"></h1>
+                                <p id="about-mean"></p>
+                            </div>
+                            <!-- <div class="about-img2">alo</div> -->
+                        </div>
+                    </div>  
+                </div>
+                <div class="slide" data-tab-content id="vil">
+                    <div class="vil">
+                        <div class="vil-container">
+                            <div class="vil-sider">
+                                <div class="vil-sider-list">
+                                    <div class="vil-sider-item" non-la>
+                                        <img src="./assets/images/unnamed (2).png" alt="" />
+                                        <img src="./assets/images/non-2.png" alt="">
+                                    </div>
+                                    <div class="vil-sider-item" gom-phuoc-tich>
+                                        <img src="./assets/images/gom.png" alt="" />
+                                        <img src="./assets/images/gom-2.png" alt="">
+                                    </div>
+                                    <div class="vil-sider-item" tranh>
+                                        <img src="./assets/images/tranh-lang-sinh.png" alt="" />
+                                        <img src="./assets/images/tranh-lang-sinh2.png" alt="">
+                                    </div>
+                                    <div class="vil-sider-item" duc-dong>
+                                        <img src="./assets/images/duc-dong.png" alt="" />
+                                        <img src="./assets/images/duc-dong2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vil-content">
+                                <div class="vil-detail">
+                                    <!-- <div class="vil-icon">
+
+
+                    </div> -->
+                                    <div class="vil-title">
+                                        <h3>Làng nón lá Phú Cam</h3>
+                                    </div>
+                                    <div class="vil-des">
+                                        Nổi tiếng với những chiếc nón bài thơ mang vẻ đẹp dịu dàng
+                                        và lãng mạn của xứ Huế. Mỗi chiếc nón được chằm tỉ mỉ và
+                                        có thể ẩn hiện hình ảnh hoặc bài thơ dưới ánh nắng.
+                                    </div>
+                                </div>
+                                <div class="vil-list-img">
+                                    <div class="swiper vil-swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="https://tourhue.vn/wp-content/uploads/2024/08/lang-non-phu-cam-hue-3.jpg"
+                                                    al="img" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="https://tourhue.vn/wp-content/uploads/2024/08/lang-non-phu-cam-hue-3.jpg"
+                                                    al="img" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="https://tourhue.vn/wp-content/uploads/2024/08/lang-non-phu-cam-hue-3.jpg"
+                                                    al="img" />
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-tab-content id="cul">
+                    <div class="festival-wrapper">
+                        <div class="festival-list">
+                            <ul>
+                                <li class="festival-item" dua-thuyen onclick="showFestival('dua-thuyen')">
+                                    Đua thuyền
+                                </li>
+                                <li class="festival-item" ca-hue onclick="showFestival('ca-hue')">
+                                    Ca Huế trên sông Hương
+                                </li>
+                                <li class="festival-item" nam-giao onclick="showFestival('nam-giao')">
+                                    Tế Đàn Nam Giao
+                                </li>
+                                <li class="festival-item" nha-nhac onclick="showFestival('nha-nhac')">
+                                    Nhã nhạc cung định Huế
+                                </li>
+                                <li class="festival-item" ao-dai onclick="showFestival('ao-dai')">
+                                    Tuần lễ áo dài
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="festival-mid">
+                            <h2 id="festival-title">Festival Huế</h2>
+                            <ol id="festival-info">
+                                <li>Giới thiệu</li>
+                                <li>Lịch sử</li>
+                                <li>Thời gian và địa điểm</li>
+                                <li>Nét đặc sắc</li>
+                                <li>Ý nghĩa</li>
+                            </ol>
+                        </div>
+                        <div class="festival-img" id="festival-img">
+                            <img src="assets/images/page1-1.jpg" alt="" id="festival-main-img1" />
+                            <h1 class="title" id="intro"></h1>
+                            <p id="festival-detail-intro"></p>
+                            <img src="" alt="" id="festival-main-img2" />
+                            <h1 class="title" id="time"></h1>
+                            <p id="festival-detail-time"></p>
+                            <img src="" alt="" id="festival-main-img3" />
+                            <h1 class="title" id="history"></h1>
+                            <p id="festival-detail-history"></p>
+                            <img src="" alt="" id="festival-main-img4" />
+                            <h1 class="title" id="main"></h1>
+                            <p id="festival-detail-main"></p>
+                            <img src="" alt="" id="festival-main-img5" />
+                            <h1 class="title" id="mean"></h1>
+                            <p id="festival-detail-mean"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-tab-content id="food">
+                    <div class="food">
+                        <div class="food-container">
+                            <div class="food-msg">
+                                <div class="food-icon">
+                                    <img src="assets/images/food-logo2.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="food-pagetion">
+                                <div class="swiper food-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-tab-content id="lib">
+                    <div class="lib">
+                        <div class="lib-container">
+                            <div class="lib-top">
+                                <div class="lib-title">Tổng quan</div>
+                            </div>
+                            <div class="lib-swiper-container">
+                                <div class="swiper lib-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://scontent.fdad3-3.fna.fbcdn.net/v/t39.30808-6/475040233_1792271124905709_7120333988634459164_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_ohc=1yq4oq3CW5MQ7kNvwE527kl&_nc_oc=AdnpiZvEiDY-BT5XAMMBvHoBXdZn9q3feCbwB0CVx1jTThQrcdIFrYnDSoMSAzy89un4tDbD7od9KmcYpRQdfuaM&_nc_zt=23&_nc_ht=scontent.fdad3-3.fna&_nc_gid=LkoeOibsep_kkvfuC83SGg&oh=00_AfRTO8ISMFY5cWZ2nvzMVPJHsX4SvjGg2JqGAalNr_v2wQ&oe=688149DD"
+                                                alt="" />
+                                            <div class="lib-more">
+                                                <div class="lib-more-text">Xem thêm</div>
+                                                <div class="lib-more-icon">
+                                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://scontent.fdad3-3.fna.fbcdn.net/v/t39.30808-6/475729631_1792271198239035_710147985674176465_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f727a1&_nc_ohc=qqSryQOcl1sQ7kNvwGfbuuQ&_nc_oc=AdlRipw6b5l7s-_sNZZUrgpI2GHVQFzKE_qRvI9WZNSqa0shq84uiYVjgIi41ge7tj0sHJi4hKF8DkpF0LJYKIU8&_nc_zt=23&_nc_ht=scontent.fdad3-3.fna&_nc_gid=pVxOpZ-LUBkR1GgTetRv-w&oh=00_AfTaEW13J5BDbGBBVbCGJ02fd75dprxN4OO0sPLlt8CZwQ&oe=68814986
+" alt="" />
+                                            <div class="lib-more">
+                                                <div class="lib-more-text">Xem thêm</div>
+                                                <div class="lib-more-icon">
+                                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://scontent.fdad3-3.fna.fbcdn.net/v/t39.30808-6/475730548_1792095868256568_1687837461479526516_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=f727a1&_nc_ohc=erxn0_ZfHWIQ7kNvwEpIBlo&_nc_oc=Adm-hQ4FF0dJ8u12gYJXLCKytY06uAJphHGnvLLEQPLAzlxTtXSYZ1l7jrWA1zsm29bI_mfebj6rSjGxPkxgNtSM&_nc_zt=23&_nc_ht=scontent.fdad3-3.fna&_nc_gid=s7kQPFf-vC8Ds21truITmQ&oh=00_AfTvwdIcPWyq0oI69gGD3G3b3xZTNKkNtwyfcqQbZrwzng&oe=688157B5
+" alt="" />
+                                            <div class="lib-more">
+                                                <div class="lib-more-text">Xem thêm</div>
+                                                <div class="lib-more-icon">
+                                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lib-bot">
+                                <div class="lib-name">
+                                    <div class="lib-name-box"></div>
+                                </div>
+                                <div class="lib-control">
+                                    <div class="lib-navigation">
+                                        <div class="lib-prev"></div>
+                                        <div class="lib-next"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="user-container">
+                <div class="languague-select">
+                    <select name="language" id="language">
+                        <option value="en">English</option>
+                        <option value="vi">Tiếng Việt</option>
+                    </select>
+                </div>
+                <div class="music-btn">Music</div>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/slide.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/culture.js"></script>
+    <script src="./assets/js/about.js"></script>
+</body>
+
+</html>

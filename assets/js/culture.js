@@ -142,3 +142,10 @@ document.querySelectorAll('#festival-info li').forEach(item => {
         }
     });
 });
+
+
+// Mặc định hiển thị lễ hội đầu tiên
+showFestival('dua-thuyen');
+
+
+

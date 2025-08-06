@@ -77,7 +77,7 @@
     }
     /* festival responsive  */
     .festival-list li{
-        padding: 0.2rem;
+        padding: 1rem;
         font-size: 1rem;
     }
     #festival-title{
@@ -102,7 +102,7 @@
 }
 
 /* Mobile styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
     .wrapper {
         min-width: auto;
         overflow-y: auto !important;
@@ -412,7 +412,6 @@
     }
 
     #cul .festival-item {
-        padding: .8rem 1rem;
         font-size: 1rem;
         text-align: center;
         background: rgba(218, 182, 125, 0.1);
@@ -681,7 +680,7 @@
 }
 
 /* Small mobile devices */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px){
     .wrapper .logo {
         width: 45px;
         height: 45px;
@@ -754,9 +753,7 @@
     }
     #cul .festival-list{
         width: 100%;
-    }
-    #cul .festival-item{
-        padding: 10px;
+        height: 50%;
     }
     #cul .festival-mid h2 {
         font-size: 1.7rem;
@@ -808,7 +805,7 @@
 }
 
 /* Extra small devices */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
     .wrapper .logo {
         width: 40px;
         height: 40px;
@@ -821,10 +818,16 @@
     }
 
     #home .slideshow {
-        height: 35vh;
+        height: 100vh;
     }
 
-    #food .food-pagetion,
+    #home .hero-content{
+        margin-top: 3.5rem;
+    }
+
+    #food .food-pagetion{
+        height: 400px;
+    }
     #lib .lib-swiper-container {
         height: 300px;
     }
@@ -837,6 +840,10 @@
     #cul .festival-wrapper,
     #lib .lib-container {
         padding: 15px 10px;
+    }
+    .festival-list li{
+        font-size: 0.8rem !important;
+        padding: 0.2rem;
     }
 }
 

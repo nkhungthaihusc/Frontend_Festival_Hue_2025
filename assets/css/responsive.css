@@ -740,6 +740,9 @@
     #vil .vil-content{
         padding: 0;
     }
+    .vil-sider-list{
+        width: 100% !important;
+    }
     #cul .festival-wrapper {
         display: flex;
         flex-direction: column;

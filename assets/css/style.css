@@ -80,7 +80,7 @@ body {
     padding-bottom: .5rem;
     position: relative;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -1879,21 +1879,7 @@ body {
     overflow: hidden;
 }
 
-.vil-detail::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, rgba(218, 182, 125, 0.1) 0%, transparent 70%);
-    animation: floatElement 8s ease-in-out infinite;
-}
 
-@keyframes floatElement {
-    0%, 100% { transform: translate(0, 0) rotate(0deg); }
-    50% { transform: translate(-20px, -20px) rotate(180deg); }
-}
 
 .vil-title {
     margin-bottom: 2rem;

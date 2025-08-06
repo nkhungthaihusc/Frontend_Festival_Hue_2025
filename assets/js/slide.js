@@ -273,7 +273,7 @@
 
    {
      title: "Làng gốm Phước Tích",
-     description: "Du lịch Huế, không khó để du khách bắt gặp hình ảnh những cô gái dịu dàng trong tà áo dài với chiếc nón bài thơ, đây được xem như một trong những hình ảnh kinh điển hoạ nên vẻ đẹp của xứ sở này và làng nón Phú Cam chính là một trong những nơi tạo ra vẻ đẹp ấy. Là một làng nghề truyền thống rất nổi tiếng nên Phú Cam thu hút nhiều du khách tìm đến, để tận mắt chiêm ngưỡng quy trình tạo nên những chiếc nón trứ danh và hiểu hơn về một trong những nghề truyền thống lắm công phu và gian nan của xứ cố đô.Mỗi sản phẩm gốm Phước Tích đều mang một đặc điểm riêng biệt, từ hoa văn tinh xảo cho đến màu sắc đa dạng, không giống ai. Dưới bàn tay tài ba và sáng tạo của những nghệ nhân, sản phẩm gốm Phước Tích trở thành biểu tượng của sự sáng tạo và tinh hoa văn hóa dân tộc.Đặc biệt, những chiếc om nấu cơm cho vua đã trở thành huyền thoại và ca dao như “Om Phước Tích ngon cơm hoàng đế / Sen Hà Trì quý thế Phú Xuân”. Sản phẩm gốm Phước Tích không chỉ là hiện thân của sự tài hoa mà còn là một phần không thể thiếu trong di sản văn hóa của đất nước.",
+     description: "Du lịch Huế, không khó để du khách bắt gặp hình ảnh những cô gái dịu dàng trong tà áo dài với chiếc nón bài thơ, đây được xem như một trong những hình ảnh kinh điển hoạ nên vẻ đẹp của xứ sở này và làng nón Phú Cam chính là một trong những nơi tạo ra vẻ đẹp ấy. Là một làng nghề truyền thống rất nổi tiếng nên Phú Cam thu hút nhiều du khách tìm đến, để tận mắt chiêm ngưỡng quy trình tạo nên những chiếc nón trứ danh và hiểu hơn về một trong những nghề truyền thống lắm công phu và gian nan của xứ cố đô.",
      image: [
        "https://imagevietnam.vnanet.vn//MediaUpload/Org/2023/10/24/5224-12-45-34.jpg",
        "https://images.baodantoc.vn/uploads/2023/Th%C3%A1ng%205/Ng%C3%A0y_31/Anh/Gom%20co/14.jpg",
@@ -282,7 +282,7 @@
    },
    {
      title: "Làng tranh dân gian Sình",
-     description: "Làng Sình Huế có địa chỉ ở thôn Lại Ân, xã Phú Mậu cách trung tâm Tp. Huế khoảng 10km về phía Bắc. Ngôi làng nằm ven sông Hương, liền kề ngã ba sông Hương hợp với sông Bồ.Trước đây, vào khoảng thế kỷ XV, có rất nhiều người dân ở các tỉnh lân cận đã tới đây và lập ra làng Sình. Có thời điểm, ngôi làng này được biết tới là một trong những trung tâm buôn bán sầm uất bậc nhất xứ kinh kỳ.Đến với làng Sình Huế ngày nay, du khách sẽ được khám phá nét độc đáo của tranh làng Sình, hòa mình cùng lễ hội vật làng Sình mùng 10 tháng Giêng âm lịch hay thưởng thức các món ăn đặc sản có 1-0-2 như: bánh ép, cơm hến, bánh bột lọc, bún bò Huế,...",
+     description: "Làng Sình Huế có địa chỉ ở thôn Lại Ân, xã Phú Mậu cách trung tâm Tp. Huế khoảng 10km về phía Bắc. Ngôi làng nằm ven sông Hương, liền kề ngã ba sông Hương hợp với sông Bồ.Trước đây, vào khoảng thế kỷ XV, có rất nhiều người dân ở các tỉnh lân cận đã tới đây và lập ra làng Sình. Có thời điểm, ngôi làng này được biết tới là một trong những trung tâm buôn bán sầm uất bậc nhất xứ kinh kỳ.Đến với làng Sình Huế ngày nay, du khách sẽ được khám phá nét độc đáo của tranh làng Sình",
      image: [
        "https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2023/2/26/1151746/ANH-1.jpg",
        "https://i.ex-cdn.com/vntravellive.com/files/hangh.vntravel/2023/01/17/5322-lang-tranh-sinh-phong-cach-hoi-hoa-khac-biet-cua-xu-hue-105235.jpg",
@@ -292,7 +292,7 @@
    },
    {
      title: "Làng nghề đúc đồng",
-     description: "Nghề đúc đồng là nghề truyền thống lâu đời của người Việt nói chung và người Huế nói riêng, đúc đông chính là 1 trong những làng nghề nổi tiếng ở Huế. Một địa điểm cho du khách có thể tìm hiểu về nghề đặc biệt này đó là phường Đúc. Khi Kinh thành Phú Xuân bị đánh chiếm thì các Công tượng đúc đồng cũng bị tan rã. Tuy nhiên, rất may nhờ những lò đúc của các anh em nhà họ Nguyễn mà làng nghề độc đáo này được lưu giữ cho đến ngày hôm nay. Làng đúc đồng nằm ở ven bờ nam sông Hương, đoạn từ cầu Giã Viên lên phía Long Thọ cách thành phố Huế khoảng 3km về phía Tây Nam, tỉnh Thừa Thiên Huế.",
+     description: "Nghề đúc đồng là nghề truyền thống lâu đời của người Việt nói chung và người Huế nói riêng, đúc đông chính là 1 trong những làng nghề nổi tiếng ở Huế. Một địa điểm cho du khách có thể tìm hiểu về nghề đặc biệt này đó là phường Đúc. Khi Kinh thành Phú Xuân bị đánh chiếm thì các Công tượng đúc đồng cũng bị tan rã. Tuy nhiên, rất may nhờ những lò đúc của các anh em nhà họ Nguyễn mà làng nghề độc đáo này được lưu giữ cho đến ngày hôm nay. Nằm ở ven bờ nam sông Hương, đoạn từ cầu Giã Viên lên phía Long Thọ cách thành phố Huế khoảng 3km về phía Tây Nam.",
      image: [
        "https://www.nongthonmoithuathienhue.vn/imgs/Thu_muc_he_thong/_Nam_2016/_Thang_12/cosoducdongngvansinh1234.jpg",
        "https://vietnamtourism.vn/imguploads/tourist/58Ducdonghue01.jpg",

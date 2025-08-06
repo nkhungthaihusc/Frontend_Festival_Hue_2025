@@ -113,8 +113,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="slide" data-tab-content id="about">
-                    <h1>Content 2</h1>
+                <div class="slide aboutBox" data-tab-content id="about">
+                    <div class="about-wrapper">
+                        <div class="aboutFes">
+                            <ul>
+                                <li class="aboutItem" gioi_thieu onclick="showEvent('gioi_thieu')" >Giới thiệu về Festival Huế</li>
+                                <li class="aboutItem" mua_xuan onclick="showEvent('mua_xuan')" >Lễ hội mùa Xuân</li>
+                                <li class="aboutItem" mua_ha onclick="showEvent('mua_ha')" >Lễ hội mùa Hạ</li>
+                                <li class="aboutItem" mua_thu onclick="showEvent('mua_thu')" >Lễ hội mùa Thu</li>
+                                <li class="aboutItem" mua_dong onclick="showEvent('mua_dong')" >Lễ hội mùa Đông</li>
+                            </ul>
+                        </div>
+                        <div class="aboutContent">
+                            <div  class="about-img">
+                                <div id="season-images" class="season-images"></div>
+                                <img id="season-hover-img" class="season-hover-img" style="display: none;">
+                                <div id="info-box" class="info-box" style="display: none;">Thông tin ảnh</div>
+                            </div>
+                            <div class="about-text">
+                                <h1 class="title-about-text" id="about-title"></h1>
+                                <p id="about-mean"></p>
+                            </div>
+                            <!-- <div class="about-img2">alo</div> -->
+                        </div>
+                    </div>  
                 </div>
                 <div class="slide" data-tab-content id="vil">
                     <div class="vil">
@@ -319,6 +341,7 @@
     <script src="./assets/js/slide.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/culture.js"></script>
+    <script src="./assets/js/about.js"></script>
 </body>
 
 </html>

@@ -1335,7 +1335,7 @@ body {
     /* justify-content: space-between; */
     /* align-items: center; */
     /* background-color: aqua; */
-    
+
 }
 
 .aboutFes {
@@ -1380,7 +1380,7 @@ body {
 
 .aboutContent {
   width: 50%;
-  aspect-ratio: 15 / 9; 
+  aspect-ratio: 15 / 9;
   position: relative;
   font-size: 1.1rem;
   line-height: 1.6;
@@ -1403,7 +1403,7 @@ body {
 
 
 .about-text {
-    
+
     position: absolute;
     left: 0;
     right: 0;
@@ -1454,8 +1454,9 @@ body {
 }
 
 /* cul  */
+
 #cul {
-    height:100vh;
+    height: calc(100vh - 7rem) !important;
     overflow: hidden !important;
     width: 100%;
     position: relative;
@@ -1464,8 +1465,7 @@ body {
 
 
 .festival-wrapper {
-    margin: 6rem 2rem;
-    height:calc(100% - 8rem)!important;
+    height: 100% !important;
     overflow: hidden !important;
     display: flex;
     align-items: flex-start;
@@ -1475,7 +1475,7 @@ body {
     color: white;
     backdrop-filter: blur(20px);
     border-radius: 15px;
-
+    margin: 1rem;
     position: relative;
     box-shadow:
         0 25px 50px rgba(0, 0, 0, 0.3),
@@ -1483,7 +1483,7 @@ body {
 }
 
 .festival-list {
-    width: 30%;
+    width: 20%;
     height: 100%;
     padding: 2rem;
     border-right: 2px solid rgba(218, 182, 125, 0.3);
@@ -1572,6 +1572,8 @@ body {
         0 10px 25px rgba(218, 182, 125, 0.2),
         0 0 0 4px rgba(218, 182, 125, 0.1);
 }
+
+
 
 .festival-item-selected {
     color: #fff !important;
@@ -1764,7 +1766,7 @@ body {
     border-radius: 1px;
 }
 
-.festival-detail {
+.festival-img p {
     max-width: 100%;
     word-wrap: break-word;
     text-align: justify;
@@ -1781,7 +1783,7 @@ body {
 }
 
 /*   Details */
-#festival-detail {
+.festival-img p {
     margin-top: 2rem;
     padding: 1.5rem;
     color: white;
@@ -1831,10 +1833,14 @@ body {
     }
 }
 
+
+
 /* Floating animation for titles */
 .title {
     animation: titleFloat 4s ease-in-out infinite;
 }
+
+
 
 @keyframes titleFloat {
     0%, 100% {
@@ -1850,6 +1856,11 @@ body {
 #festival-info li:focus {
     outline: 2px solid #dab67d;
     outline-offset: 2px;
+}
+
+/* Smooth transitions for content changes */
+.festival-img * {
+    transition: all 0.3s ease;
 }
 
 /*   text selection */

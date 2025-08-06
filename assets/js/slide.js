@@ -74,20 +74,6 @@
    //    disableOnInteraction: false, // false: sẽ tiếp tục chạy kể cả khi người dùng chạm ->true: ngược lại
    //  },
 
-   breakpoints: {
-     320: {
-       slidesPerView: 1,
-       spaceBetween: 10
-     },
-     768: {
-       slidesPerView: 2,
-       spaceBetween: 15
-     },
-     1024: {
-       slidesPerView: 3,
-       spaceBetween: 8
-     }
-   },
    on: {
      init: function () {
        this.slides.forEach((slide, index) => {

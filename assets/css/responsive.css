@@ -208,7 +208,7 @@
     }
 
     #home .slideshow {
-        height: 40vh;
+        height: 100vh;
         margin-bottom: 30px;
         border-radius: 15px;
         overflow: hidden;
@@ -684,7 +684,22 @@
     #home .hero-subtitle {
         font-size: 1rem;
     }
-
+    .hero-features{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .hero-features .feature-item{
+        width: 45%;
+    }
+    .hero-content{
+        flex-direction: column;
+        padding: 0!important;
+        width: 100%!important;
+    }
+    .festival-info-cards{
+        flex-direction: row;
+    }
     #home .feature-item {
         font-size: 0.9rem;
         padding: 0.8rem;
@@ -710,12 +725,24 @@
     #vil .vil-title h3 {
         font-size: 1.5rem;
     }
-
+    #vil .vil-content{
+        padding: 0;
+    }
     #cul .festival-wrapper {
         display: flex;
-        padding: 20px 15px;
+        flex-direction: column;
+        margin: 0;
+        height: 100%;
     }
-
+    #cul .festival-wrapper{
+        height: 100% !important;
+    }
+    #cul .festival-list{
+        width: 100%;
+    }
+    #cul .festival-item{
+        padding: 10px;
+    }
     #cul .festival-mid h2 {
         font-size: 1.7rem;
     }
@@ -732,7 +759,15 @@
         width: 5rem;
         height: 5rem;
     }
-
+    .food-overlay:hover p{
+        display: none;
+    }
+    #food .swiper-slide-next p,h3{
+        display: none;
+    }
+    #food .swiper-slide-active p,h3{
+        display: block;
+    }
     #lib .lib-container {
         padding: 15px;
     }
@@ -740,11 +775,15 @@
     #lib .lib-title {
         font-size: 1.7rem;
     }
-
+    #lib .lib-title::before {
+        display: none;
+    }
     #lib .lib-swiper-container {
         height: 350px;
     }
-
+    .lib-name-cn{
+        font-size: 1.2rem !important;
+    }
     /* Button adjustments for small screens */
     #home .btn-primary,
     #home .btn-secondary {

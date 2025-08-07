@@ -115,26 +115,53 @@
                 </div>
                 <div class="slide aboutBox" data-tab-content id="about">
                     <div class="about-wrapper">
-                        <div class="aboutFes">
-                            <ul>
-                                <li class="aboutItem" gioi_thieu onclick="showEvent('gioi_thieu')" >Giới thiệu về Festival Huế</li>
-                                <li class="aboutItem" mua_xuan onclick="showEvent('mua_xuan')" >Lễ hội mùa Xuân</li>
-                                <li class="aboutItem" mua_ha onclick="showEvent('mua_ha')" >Lễ hội mùa Hạ</li>
-                                <li class="aboutItem" mua_thu onclick="showEvent('mua_thu')" >Lễ hội mùa Thu</li>
-                                <li class="aboutItem" mua_dong onclick="showEvent('mua_dong')" >Lễ hội mùa Đông</li>
-                            </ul>
+                        <!-- <div class="about-header">
+                            <h1 class="about-main-title">Festival Huế 2025</h1>
+                            <p class="about-subtitle">Khám phá hành trình văn hóa bốn mùa</p>
                         </div>
-                        <div class="aboutContent">
-                            <div  class="about-img">
-                                <div id="season-images" class="season-images"></div>
-                                <img id="season-hover-img" class="season-hover-img" style="display: none;">
-                                <div id="info-box" class="info-box" style="display: none;">Thông tin ảnh</div>
+                         -->
+                        <div class="about-content-container">
+                            <div class="aboutFes">
+                                <h3 class="season-selector-title">Chọn mùa lễ hội</h3>
+                                <ul>
+                                    <li class="aboutItem active" onclick="showEvent('gioi_thieu')">
+                                        <div class="season-icon">📖</div>
+                                        <span>Giới thiệu</span>
+                                    </li>
+                                    <li class="aboutItem" onclick="showEvent('mua_xuan')">
+                                        <div class="season-icon">🌸</div>
+                                        <span>Mùa Xuân</span>
+                                    </li>
+                                    <li class="aboutItem" onclick="showEvent('mua_ha')">
+                                        <div class="season-icon">☀️</div>
+                                        <span>Mùa Hạ</span>
+                                    </li>
+                                    <li class="aboutItem" onclick="showEvent('mua_thu')">
+                                        <div class="season-icon">🍂</div>
+                                        <span>Mùa Thu</span>
+                                    </li>
+                                    <li class="aboutItem" onclick="showEvent('mua_dong')">
+                                        <div class="season-icon">❄️</div>
+                                        <span>Mùa Đông</span>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="about-text">
-                                <h1 class="title-about-text" id="about-title"></h1>
-                                <p id="about-mean"></p>
+                            
+                            <div class="aboutContent">
+                                <div class="about-visual">
+                                    <div class="about-img">
+                                        <div id="season-images" class="season-images"></div>
+                                        <div class="img-overlay"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="about-text">
+                                    <h2 class="title-about-text" id="about-title">Giới thiệu về Festival Huế</h2>
+                                    <div class="text-content">
+                                        <p id="about-mean"></p>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- <div class="about-img2">alo</div> -->
                         </div>
                     </div>  
                 </div>

@@ -128,14 +128,19 @@
     #about .aboutContent {
         flex-direction: column;
         gap: 1.5rem;
+        overflow-y: scroll;
     }
 
     #about .about-visual {
         height: 350px;
+        overflow: unset;
     }
 
     #about .about-main-title {
         font-size: 3rem;
+    }
+    #about .about-text{
+        padding-top: 6rem;
     }
 }
 
@@ -967,6 +972,9 @@
         width: 100%;
         height: 50%;
     }
+    #cul .festival-list li{
+        padding: 0;
+    }
     #cul .festival-mid h2 {
         font-size: 1.7rem;
     }
@@ -974,10 +982,10 @@
     #cul .festival-img h1 {
         font-size: 1.3rem;
     }
-
     #food .food-container {
         padding: 20px 10px;
     }
+
 
     #food .food-icon img {
         width: 5rem;

@@ -17,7 +17,7 @@ const aboutText = {
     },
     "mua_ha": {
         title: "Lễ hội mùa Hạ - “Kinh thành toả sáng”",
-        mean: `            Khi ánh nắng mùa hạ phủ vàng lên từng mái ngói rêu phong của Kinh thành Huế, cũng là lúc nơi đây bước vào giai đoạn rực rỡ nhất của Festival bốn mùa. “Kinh thành tỏa sáng” không chỉ là tên gọi, mà còn là hình ảnh biểu tượng cho một Huế sôi động, bừng lên sức sống giữa lòng di sản.            
+        mean: `            Khi ánh nắng mùa hạ phủ vàng lên từng mái ngói rêu phong của Kinh thành Huế, cũng là lúc nơi đây bước vào giai đoạn rực rỡ nhất của Festival bốn mùa. “Kinh thành tỏa sáng” không chỉ là tên gọi, mà còn là hình ảnh biểu tượng cho một Huế sôi động, bừng lên sức sống giữa lòng di sản.
             Mùa Hạ là mùa của nghệ thuật trình diễn đỉnh cao, với các chương trình nổi bật như: lễ hội Áo dài truyền thống và hiện đại, lễ hội đường phố rực rỡ sắc màu, chương trình nghệ thuật cộng đồng và các đêm nhạc lớn quy tụ nghệ sĩ trong nước và quốc tế.
             Điểm nhấn đặc biệt là Triển lãm “Không gian du lịch, di sản văn hóa và danh thắng Việt Nam năm 2025”, nơi du khách có thể khám phá chiều sâu di sản khắp ba miền đất nước. Bên cạnh đó, Chung kết Hoa hậu Việt Nam tại Huế hứa hẹn mang đến hình ảnh thanh lịch, duyên dáng của người phụ nữ Việt giữa lòng di sản.
             Không thể thiếu trong hành trình mùa Hạ là không gian ẩm thực đặc sắc – từ Tuần lễ Phật Đản và Lễ hội Ẩm thực chay đầy thanh tịnh, đến Giao lưu Ẩm thực Quốc tế Huế với hương vị đa quốc gia hòa quyện cùng tinh hoa ẩm thực cố đô. Đây là dịp để du khách cảm nhận trọn vẹn chiều sâu văn hóa Huế qua vị giác và tinh thần.
@@ -409,7 +409,7 @@ function createSeasonImageGallery(container, images, season) {
 
     modalOverlay.appendChild(modalContent);
 
-    
+
 
     container.appendChild(galleryWrapper);
     document.body.appendChild(modalOverlay);

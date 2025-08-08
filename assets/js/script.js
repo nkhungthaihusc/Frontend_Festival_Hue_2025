@@ -83,7 +83,7 @@ document.querySelectorAll('#about-mean').forEach(item => {
     item.addEventListener('wheel', function(e) {
         e.stopPropagation();
     });
-}); 
+});
 
 let currentTab = 0;
 const tabCount = tabs.length;
@@ -139,3 +139,4 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     }, 2200);
 });
+

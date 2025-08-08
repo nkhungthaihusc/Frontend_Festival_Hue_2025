@@ -183,6 +183,7 @@ body {
         rgba(26, 19, 37, 0.95) 100%
     );
     backdrop-filter: blur(15px);
+    animation: slideInUp 0.8s ease-out;
 }
 
 #food .food-container {
@@ -571,6 +572,7 @@ body {
     height: 100%;
     position: relative;
     overflow: hidden;
+    animation: slideInUp 0.8s ease-out;
 }
 
 
@@ -1326,14 +1328,13 @@ body {
     backdrop-filter: blur(20px);
     padding: 2rem;
     overflow-y: auto;
+    animation: slideInUp 0.8s ease-out;
 }
 
 .about-wrapper {
     width: 100%;
-    max-width: 1400px;
     height: 100%;
     display: flex;
-    
     gap: 2rem;
     position: relative;
 }
@@ -1367,7 +1368,7 @@ body {
     gap: 2rem;
     min-height: 0;
     margin-top: 2rem;
-   
+
 }
 
 .aboutFes {
@@ -1649,8 +1650,8 @@ body {
 }
 
 /* Enhanced modal styles */
-.gallery-modal {
-    backdrop-filter: blur(10px);
+.gallery-modal div::-webkit-scrollbar{
+    display: none;
 }
 
 .gallery-modal .modal-content {
@@ -1749,7 +1750,7 @@ body {
     .about-main-title {
         font-size: 3rem;
     }
-    
+
     .title-about-text {
         font-size: 1.6rem;
     }
@@ -1759,7 +1760,7 @@ body {
     .about-main-title {
         font-size: 2.5rem;
     }
-    
+
     .title-about-text {
         font-size: 1.4rem;
     }
@@ -2205,6 +2206,7 @@ body {
     gap: 2rem;
     padding: 0 2rem;
     position: relative;
+    animation: slideInUp 0.8s ease-out;
 }
 
 /*   Sidebar */

@@ -16,18 +16,18 @@ tabs.forEach(tab => {
 function switchTab(targetSelector) {
     const targetTab = document.querySelector(`[data-tab-target="${targetSelector}"]`);
     const targetContent = document.querySelector(targetSelector);
-    
+
     if (targetTab && targetContent) {
         tabContents.forEach(tc => tc.classList.remove('active'));
         tabs.forEach(t => t.classList.remove('active'));
-        
+
         targetContent.classList.add('active');
         targetTab.classList.add('active');
-        
+
         // Add smooth transition effect
         targetContent.style.opacity = '0';
         targetContent.style.transform = 'translateY(20px)';
-        
+
         setTimeout(() => {
             targetContent.style.transition = 'all 0.5s ease';
             targetContent.style.opacity = '1';
@@ -74,7 +74,7 @@ function activateTab(index) {
 
 
 document.querySelectorAll('.festival-img').forEach(img => {
-    img.addEventListener('wheel', function(e) {
+    img.addEventListener('wheel', function (e) {
         e.stopPropagation();
     });
 });
@@ -123,4 +123,14 @@ tabs.forEach((tab, idx) => {
     tab.addEventListener('click', () => {
         currentTab = idx;
     });
+});
+
+window.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () {
+        var intro = document.getElementById('intro-overlay');
+        if (intro) {
+            intro.style.opacity = '0';
+            setTimeout(function () { intro.style.display = 'none'; }, 700);
+        }
+    }, 2200);
 });

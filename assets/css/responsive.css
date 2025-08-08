@@ -109,6 +109,7 @@
     #about .aboutFes {
         width: 100%;
         margin-bottom: 1rem;
+        max-height: 400px;
     }
 
     #about .aboutFes ul {
@@ -404,7 +405,7 @@
     #about .aboutContent {
         flex-direction: column;
         gap: 1.5rem;
-        min-height: 400px;
+        min-height: 700px;
         padding: 1.5rem;
     }
 

@@ -79,6 +79,11 @@ document.querySelectorAll('.festival-img').forEach(img => {
     });
 });
 
+document.querySelectorAll('#about-mean').forEach(item => {
+    item.addEventListener('wheel', function(e) {
+        e.stopPropagation();
+    });
+}); 
 
 let currentTab = 0;
 const tabCount = tabs.length;

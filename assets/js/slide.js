@@ -66,7 +66,7 @@
    speed: 600,
    effect: 'slide',
    centeredSlides: false,
-   allowTouchMove: false, // Disable touch/swipe gestures
+   allowTouchMove: true, // Disable touch/swipe gestures
    mousewheel: false, // Disable mouse wheel scrolling
    keyboard: false, // Disable keyboard navigation
    //  autoplay: {
@@ -317,7 +317,7 @@
      slideShadows: true,
    },
    autoplay: {
-     delay: 4000,
+     delay: 2500,
      disableOnInteraction: false,
    },
  });

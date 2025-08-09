@@ -99,6 +99,49 @@
     .food-overlay p{
         font-size: 0.7rem!important;
     }
+
+    /* About responsive for tablet */
+    #about .about-content-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #about .aboutFes {
+        width: 100%;
+        margin-bottom: 1rem;
+        max-height: 400px;
+    }
+
+    #about .aboutFes ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    #about .aboutFes ul li {
+        flex: 1;
+        min-width: 150px;
+        max-width: 200px;
+    }
+
+    #about .aboutContent {
+        flex-direction: column;
+        gap: 1.5rem;
+        overflow-y: scroll;
+    }
+
+    #about .about-visual {
+        height: 350px;
+        overflow: unset;
+    }
+
+    #about .about-main-title {
+        font-size: 3rem;
+    }
+    #about .about-text{
+        padding-top: 6rem;
+    }
 }
 
 /* Mobile styles */
@@ -288,18 +331,148 @@
 
     /* ABOUT SECTION - Mobile */
     #about {
-        padding: 60px 20px;
+        padding: 1rem !important;
+        height: auto !important;
         min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(135deg, #2a1f3d 0%, #1a1325 100%);
+        overflow-y: auto !important;
     }
 
-    #about h1 {
-        font-size: 2rem;
+    #about .about-wrapper {
+        gap: 1.5rem;
+        height: auto;
+    }
+
+    #about .about-header {
+        margin-bottom: 1rem;
+    }
+
+    #about .about-main-title {
+        font-size: 2.5rem;
+    }
+
+    #about .about-subtitle {
+        font-size: 1.1rem;
+    }
+
+    #about .about-content-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #about .aboutFes {
+        width: 100%;
+        padding: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    #about .season-selector-title {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    #about .aboutFes ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        justify-content: center;
+    }
+
+    #about .aboutFes ul li {
+        flex: 1;
+        min-width: 120px;
+        max-width: 150px;
+        padding: 1rem;
         text-align: center;
-        color: #dab67d;
+        flex-direction: column;
+        gap: 0.5rem;
+        transform: none !important;
+    }
+
+    #about .aboutFes ul li:hover {
+        transform: none !important;
+    }
+
+    #about .aboutFes ul li.active {
+        transform: none !important;
+    }
+
+    #about .aboutFes ul li span {
+        font-size: 0.9rem;
+        white-space: nowrap;
+        overflow: visible;
+        text-overflow: none;
+    }
+
+    #about .aboutFes ul li .season-icon {
+        font-size: 1.5rem;
+    }
+
+    #about .aboutContent {
+        flex-direction: column;
+        gap: 1.5rem;
+        min-height: 700px;
+        padding: 1.5rem;
+    }
+
+    #about .about-visual {
+        height: 280px;
+        order: 1;
+    }
+
+    #about .about-img {
+        min-height: 280px;
+    }
+
+    #about .about-text {
+        order: 2;
+    }
+
+    #about .title-about-text {
+        font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    #about .text-content {
+        max-height: 300px;
+        padding-right: 10px;
+    }
+
+    #about #about-mean {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    /* Gallery modal responsive */
+    #about .gallery-modal .modal-content {
+        padding: 1rem;
+        max-width: 95vw;
+        max-height: 85vh;
+    }
+
+    #about .gallery-modal .image-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    #about .gallery-modal .image-card {
+        max-width: 100%;
+    }
+
+    #about .gallery-modal .modal-title {
+        font-size: 1.2rem;
+    }
+
+    /* Season gallery button responsive */
+    #about .season-gallery {
+        width: 50px !important;
+        height: 50px !important;
+        top: 10px !important;
+        right: 10px !important;
+    }
+
+    #about .season-gallery .gallery-icon {
+        font-size: 1.2rem !important;
     }
 
     /* VILLAGE SECTION - Mobile */
@@ -724,6 +897,50 @@
         font-size: 1.1rem;
     }
 
+    /* About section for small devices */
+    #about .about-main-title {
+        font-size: 2rem;
+    }
+
+    #about .about-subtitle {
+        font-size: 1rem;
+    }
+
+    #about .aboutFes ul li {
+        min-width: 100px;
+        max-width: 120px;
+        padding: 0.8rem 0.5rem;
+    }
+
+    #about .aboutFes ul li span {
+        font-size: 0.8rem;
+    }
+
+    #about .aboutFes ul li .season-icon {
+        font-size: 1.3rem;
+    }
+
+    #about .aboutContent {
+        padding: 1rem;
+    }
+
+    #about .about-visual {
+        height: 220px;
+    }
+
+    #about .about-img {
+        min-height: 220px;
+    }
+
+    #about .title-about-text {
+        font-size: 1.4rem;
+    }
+
+    #about #about-mean {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
     #vil .vil-container {
         padding: 20px 15px;
     }
@@ -755,6 +972,9 @@
         width: 100%;
         height: 50%;
     }
+    #cul .festival-list li{
+        padding: 0;
+    }
     #cul .festival-mid h2 {
         font-size: 1.7rem;
     }
@@ -762,10 +982,10 @@
     #cul .festival-img h1 {
         font-size: 1.3rem;
     }
-
     #food .food-container {
         padding: 20px 10px;
     }
+
 
     #food .food-icon img {
         width: 5rem;
@@ -847,11 +1067,8 @@
     }
 }
 
-/* Landscape orientation adjustments */
 @media screen and (max-width: 768px) and (orientation: landscape) {
-    #home .slideshow {
-        height: 50vh;
-    }
+ 
 
     #home .hero-content {
         gap: 20px;

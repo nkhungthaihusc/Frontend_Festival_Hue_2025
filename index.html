@@ -15,6 +15,12 @@
 </head>
 
 <body>
+    <!-- Intro overlay -->
+    <div id="intro-overlay" style="position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:#fff;display:flex;align-items:center;justify-content:center;flex-direction:column;transition:opacity 0.7s; background-color: blanchedalmond;">
+        <img src="./assets/images/logo-festival-hue-khong-nen.webp" alt="Festival Hue Logo" style="width:120px;height:auto;margin-bottom:24px;">
+        <h2 style="font-family:'LaguSansBold',sans-serif;font-size:2rem;color:#a0202a;margin-bottom:8px; font-family: 'Courier New', Courier, monospace;">Festival Huế 2025</h2>
+        <p style="font-size:1.1rem;color:#444; font-family: 'Courier New', Courier, monospace; text-align: center;">Khám phá vẻ đẹp văn hóa ngàn năm của cố đô Huế</p>
+    </div>
     <div class="wrapper">
         <div class="my-container">
             <div class="nav-bar">
@@ -30,6 +36,7 @@
                         <div class="nav-item" data-tab-target="#cul">Văn hóa</div>
                         <div class="nav-item" data-tab-target="#food">Ẩm thực</div>
                         <div class="nav-item" data-tab-target="#lib">Thư viện</div>
+                        <div class="nav-item" data-tab-target="#contact">Liên hệ</div>
                     </div>
                 </div>
             </div>
@@ -46,12 +53,12 @@
                             <div></div>
                             <div></div>
                         </div>
-                        
+
                         <div class="hero-content">
                             <div class="hero-text">
                                 <h1 class="hero-title">
-                                    <span class="title-line">Festival</span>
-                                    <span class="title-line highlight">Huế 2025</span>
+                                    <div class="title-line">Festival <span>Hue 2025</span></div>
+
                                 </h1>
                                 <p class="hero-subtitle">
                                     Khám phá vẻ đẹp văn hóa ngàn năm của cố đô Huế
@@ -85,7 +92,7 @@
                                     </button>
                                 </div>
                             </div>
-                            
+
                             <div class="festival-info-cards">
                                 <div class="info-card">
                                     <div class="card-icon">📅</div>
@@ -104,7 +111,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="scroll-indicator">
                             <div class="scroll-text">Cuộn để khám phá</div>
                             <div class="scroll-arrow">
@@ -115,28 +122,55 @@
                 </div>
                 <div class="slide aboutBox" data-tab-content id="about">
                     <div class="about-wrapper">
-                        <div class="aboutFes">
-                            <ul>
-                                <li class="aboutItem" gioi_thieu onclick="showEvent('gioi_thieu')" >Giới thiệu về Festival Huế</li>
-                                <li class="aboutItem" mua_xuan onclick="showEvent('mua_xuan')" >Lễ hội mùa Xuân</li>
-                                <li class="aboutItem" mua_ha onclick="showEvent('mua_ha')" >Lễ hội mùa Hạ</li>
-                                <li class="aboutItem" mua_thu onclick="showEvent('mua_thu')" >Lễ hội mùa Thu</li>
-                                <li class="aboutItem" mua_dong onclick="showEvent('mua_dong')" >Lễ hội mùa Đông</li>
-                            </ul>
+                        <!-- <div class="about-header">
+                            <h1 class="about-main-title">Festival Huế 2025</h1>
+                            <p class="about-subtitle">Khám phá hành trình văn hóa bốn mùa</p>
                         </div>
-                        <div class="aboutContent">
-                            <div  class="about-img">
-                                <div id="season-images" class="season-images"></div>
-                                <img id="season-hover-img" class="season-hover-img" style="display: none;">
-                                <div id="info-box" class="info-box" style="display: none;">Thông tin ảnh</div>
+                         -->
+                        <div class="about-content-container">
+                            <div class="aboutFes">
+                                <h3 class="season-selector-title">Chọn mùa lễ hội</h3>
+                                <ul>
+                                    <li class="aboutItem active" onclick="showEvent('gioi_thieu')">
+                                        <div class="season-icon">📖</div>
+                                        <span>Giới thiệu</span>
+                                    </li>
+                                    <li class="aboutItem" onclick="showEvent('mua_xuan')">
+                                        <div class="season-icon">🌸</div>
+                                        <span>Mùa Xuân</span>
+                                    </li>
+                                    <li class="aboutItem" onclick="showEvent('mua_ha')">
+                                        <div class="season-icon">☀️</div>
+                                        <span>Mùa Hạ</span>
+                                    </li>
+                                    <li class="aboutItem" onclick="showEvent('mua_thu')">
+                                        <div class="season-icon">🍂</div>
+                                        <span>Mùa Thu</span>
+                                    </li>
+                                    <li class="aboutItem" onclick="showEvent('mua_dong')">
+                                        <div class="season-icon">❄️</div>
+                                        <span>Mùa Đông</span>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="about-text">
-                                <h1 class="title-about-text" id="about-title"></h1>
-                                <p id="about-mean"></p>
+
+                            <div class="aboutContent">
+                                <div class="about-visual">
+                                    <div class="about-img">
+                                        <div id="season-images" class="season-images"></div>
+                                        <div class="img-overlay"></div>
+                                    </div>
+                                </div>
+
+                                <div class="about-text">
+                                    <h2 class="title-about-text" id="about-title">Giới thiệu về Festival Huế</h2>
+                                    <div class="text-content">
+                                        <p id="about-mean"></p>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- <div class="about-img2">alo</div> -->
                         </div>
-                    </div>  
+                    </div>
                 </div>
                 <div class="slide" data-tab-content id="vil">
                     <div class="vil">
@@ -263,7 +297,7 @@
                                         <div class="swiper-pagination"></div>
                                     </div>
                                 </div>
-                              
+
                             </div>
                         </div>
                     </div>
@@ -318,6 +352,82 @@
                                     <div class="lib-navigation">
                                         <div class="lib-prev"></div>
                                         <div class="lib-next"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-tab-content id="contact">
+                    <div class="contact">
+                        <div class="contact-container">
+                            <div class="contact-header">
+                                <h1 class="contact-title">Liên hệ với chúng tôi</h1>
+                            </div>
+
+                            <div class="contact-content">
+                                <div class="contact-form-centered">
+                                    <div class="form-container">
+                                        <form class="contact-form-inner">
+                                            <div class="form-row">
+                                                <div class="form-group">
+                                                    <input type="text" id="name" name="name" placeholder="Họ và tên" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="email" id="email" name="email" placeholder="Email" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <textarea id="message" name="message" rows="2" placeholder="Tin nhắn của bạn" required></textarea>
+                                            </div>
+
+                                            <button type="submit" class="submit-btn">
+                                                <span>Gửi tin nhắn</span>
+                                                <i class="fas fa-paper-plane"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Compact Footer with Contact Info -->
+                            <div class="footer-compact">
+                                <div class="footer-content-compact">
+                                    <div class="footer-left">
+                                        <div class="footer-logo-compact">
+                                            <img src="./assets/images/logo-festival-hue-khong-nen.webp" alt="Festival Huế Logo">
+                                            <span>Festival Huế 2025</span>
+                                            <h4 class="footer-text">TRUNG TÂM BẢO TỒN DI TÍCH CỐ ĐÔ HUẾ</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="footer-center">
+                                        <div class="contact-info-footer">
+                                            <div class="info-item-footer">
+                                                <div class="info-icon-footer">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                </div>
+                                                <div class="info-details-footer">
+                                                    <p>33 Tống Duy Tân, Phú Xuân, Huế</p>
+                                                    <p><i class="fas fa-envelope"></i> huefestival.official@gmail.com</p>
+                                                    <p><i class="fas fa-phone"></i> (+84) 234 3522 222</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="footer-right">
+                                        <div class="footer-social-compact">
+                                            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                                            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                            <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                                        </div>
+                                        <div class="newsletter-form-footer">
+                                            <input type="email" placeholder="Email nhận tin">
+                                            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

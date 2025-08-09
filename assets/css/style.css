@@ -1410,7 +1410,6 @@ body {
     border: 1px solid rgba(218, 182, 125, 0.2);
     border-radius: 20px;
     padding: 2rem;
-    height: 90%;
 }
 
 .season-selector-title {
@@ -2686,6 +2685,7 @@ body {
 }
 .footer-text{
     color: #dab67d;
+    text-align: center;
 }
 .info-item-footer {
     display: flex;

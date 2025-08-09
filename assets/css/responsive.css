@@ -1,4 +1,10 @@
+@media screen and (max-width: 1220px){
+    .logo{
+        display: none;
+    }
+}
 @media screen and (max-width: 1024px) {
+
     .wrapper {
         min-width: auto;
     }
@@ -33,7 +39,6 @@
     .hero-features{
         margin-bottom: .6rem;
     }
-
     .hero-buttons{
         width: 100%;
         display: flex;
@@ -139,8 +144,8 @@
     #about .about-main-title {
         font-size: 3rem;
     }
-    #about .about-text{
-        padding-top: 6rem;
+    #cul .festival-mid{
+        overflow: scroll;
     }
 }
 
@@ -569,6 +574,7 @@
         border: 1px solid rgba(218, 182, 125, 0.2);
     }
 
+
     #cul .festival-list {
         width: 40%;
         order: 2;
@@ -860,11 +866,13 @@
         top: 15px;
         right: 15px;
     }
-
+    #home{
+        height: auto;
+        overflow: visible;
+    }
     #home .hero-title {
         font-size: 2rem;
     }
-
     #home .hero-subtitle {
         font-size: 1rem;
     }
@@ -1038,7 +1046,7 @@
     }
 
     #home .slideshow {
-        height: 100vh;
+        height: inherit;
     }
 
     #home .hero-content{
@@ -1068,7 +1076,7 @@
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
- 
+
 
     #home .hero-content {
         gap: 20px;

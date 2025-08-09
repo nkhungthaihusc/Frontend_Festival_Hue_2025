@@ -2681,7 +2681,9 @@ body {
 .contact-info-footer {
     width: 100%;
 }
-
+.footer-text{
+    color: #dab67d;
+}
 .info-item-footer {
     display: flex;
     align-items: flex-start;
@@ -2741,6 +2743,7 @@ body {
     display: flex;
     align-items: center;
     gap: 0.8rem;
+    flex-direction: column;
 }
 
 .footer-logo-compact img {

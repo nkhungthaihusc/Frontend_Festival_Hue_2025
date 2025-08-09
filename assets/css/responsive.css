@@ -1067,11 +1067,8 @@
     }
 }
 
-/* Landscape orientation adjustments */
 @media screen and (max-width: 768px) and (orientation: landscape) {
-    #home .slideshow {
-        height: 50vh;
-    }
+ 
 
     #home .hero-content {
         gap: 20px;
